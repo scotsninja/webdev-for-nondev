@@ -1,0 +1,28 @@
+back-end vs front-end
+html vs css vs javascript vs sql vs etc
+explanation of tech stack
+development logic and principles; how to read code
+which language should i use?
+what is a cms? what is a framework? what should i use?
+what is an api?
+what does it mean to make a site fast?
+test-/behaviour-driven design
+agile/extreme design methods
+  write tests
+  stand-ups
+  pair programming
+  stepwise refinement
+how to read code (html, css, sql)
+tools to use to code: text editors, IDEs
+version control: git, SVN, mercurial
+developer tools/DOM inspector
+domains, subdomains, hosting, HTTP, request/response cycle
+algorithms: sort, search
+the difference between searching, sorting, filtering
+terminology
+
+
+python project
+
+
+www.metaltoad.com/blog/programming-skills-every-non-programmer-should-have
