@@ -1,0 +1,7 @@
+.metadata
+.settings
+.buildpath
+.project
+presenter/cache
+presenter/src/error.log
+Thumbs.db
