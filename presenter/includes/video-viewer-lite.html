@@ -1,0 +1,21 @@
+<?php /* Video Viewer Lite - All the great tasting videos you love, with half the html! */
+
+// get list of videos
+include('/includes/si_media.php');
+
+$sVideo = $videos[$_GET['video']];
+?>
+
+<?php if ($sVideo) { ?>
+	<div style="display:none;">
+		<p>If the video does not play automatically, click <a href="#" id="vvl-link" class="video" data-overlay="<?php echo $sVideo['id']; ?>">here</a>.</p>
+	</div>
+<?php } ?>
+<script type="text/javascript">
+	// play the video on page load
+	window.onload = playVideo;
+	
+	function playVideo() {
+		setTimeout(function() {$('a#vvl-link').click();}, 500);
+	}
+</script>

@@ -1,0 +1,47 @@
+<?php
+// get list of pdfs
+include('si_media.php');
+
+$sPdf = $pdfs[$_GET['pdf']];
+
+// if no matching pdf, redirect to homepage
+if (!$sPdf) $sPdf = array('title' => 'PDF Not Found', 'url' => 'http://'.$_SERVER['SERVER_NAME']);
+
+$initialTimer = 3;		// # seconds before automatic redirect
+
+$settings['title'] = $sPdf['title'];
+$settings['description'] = $sPdf['description'];
+$settings['image'] = $sPdf['image'];
+$settings['medium'] = $sPdf['medium'];
+$settings['body_classes'] = array('home');
+$settings['js'] = "window.onload = loadPdf;
+var countdown = ".$initialTimer .", t;
+
+function loadPdf() {
+	decrementTimer();";
+	
+if ($_GET['pdf'] != '') {
+	//$settings['js'] .= "trackEvent('Downloads', '". $sPdf['label'] ."', '');";
+}
+
+$settings['js'] .= "setTimeout(function() {window.location.replace('". $sPdf['url'] ."');}, countdown*1000);
+}
+
+function decrementTimer() {
+	var v = new Number($('#timer').text());
+	
+	if (v > 0) {
+		$('#timer').text(v-1);
+		t = setTimeout('decrementTimer()', 1000);
+	}
+}";
+
+include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
+
+<div class="row-fluid">
+	<div class="span12">
+		<p>If you are not redirected in <strong><span id="timer"><?php echo $initialTimer; ?></span> seconds</strong>, <a href="<?php echo $sPdf['url']; ?>">click here</a> to view your PDF: <em><?php echo $sPdf['title']; ?></em></p>
+	</div>
+</div>
+		
+<?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_footer.php"); ?>
