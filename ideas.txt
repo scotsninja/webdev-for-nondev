@@ -20,6 +20,8 @@ domains, subdomains, hosting, HTTP, request/response cycle
 algorithms: sort, search
 the difference between searching, sorting, filtering
 terminology
+analytics
+standards and accessibility
 
 
 python project
