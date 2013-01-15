@@ -1,7 +1,7 @@
 Title: Alphabet Soup: PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?
 Length: 30min
 Goals: To introduce a number of common web technologies, as well as the difference between front- and back-end, server, transport and developer technologies. 
-Topics covered: 
+Topics covered:
 	front-end:
 		HTML- HTML4, XHTML, HTML5
 		CSS- CSS2, CSS3

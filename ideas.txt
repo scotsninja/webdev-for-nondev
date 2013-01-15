@@ -22,6 +22,7 @@ the difference between searching, sorting, filtering
 terminology
 analytics
 standards and accessibility
+scripting vs programming vs markup
 
 
 python project

@@ -1,11 +1,38 @@
-slide
-	title
-	sub
-	row
-		col
-			h3
-			text
-			img {description}
+Pseudo:
+Title page
+	introduce presentation
+	date
+	version
+introduce
+	jumbled acronyms
+	let's just get this over with
+dichotomies
+	front vs back
+	client vs server
+	false dichotomies
+		technologies blend the two realms, allow them to interact
+this is the front
+	HTML, CSS, JS, DOM, UI, UX, SASS, LESS, Flash
+this is the back
+	PHP, .NET, Ruby, SSI, SQL, DBMS, ROR
+this is the server
+	Apache, IIS, cron, DNS, TCP, IP, TLD, URL, URI, LAMP, ICANN, CNAME, SLD, subdomain
+this is the superhighway
+	API, SOAP, oAuth, JSON, XML, AJAX, FTP, HTTP, SSL, SSH, RSS, Atom, CMS, WYSIWYG, SaaS, XSS
+this is the development environment
+	SVN, Git, IDE, XAMPP, SDK, W3C, WAI, Section 508, WCAG
+what does siren do
+	multiple steps toward user
+		back > front > client
+closing
+	key ideas
+	key questions
+	open questions
+References page
+	references
+	see more links
+
+========================
 
 slide
 	title Alphabet Soup
