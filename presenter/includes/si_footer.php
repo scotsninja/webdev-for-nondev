@@ -1,8 +1,3 @@
-<div class="row-fluid">
-	<div class="span12">
-		<div id="footer">{Footer goes here}</div>
-	</div>
-</div>
 </div> <?php // end container ?>
 <div id="fb-root"></div>
 <div id="mask"></div>

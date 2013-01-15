@@ -1,15 +1,13 @@
 <?php
-$settings['title'] = 'Example Page';
+$settings['title'] = 'Home | Lecture Presentation Platform (Clio)';
 $settings['body_classes'] = array('home','example');
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 
 <div class="row-fluid">
-	<div class="span9">
-		<?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_social.php"); ?>
-		{Page content goes here}
+	<div class="span12">
+		{links to each lecture}
 	</div>
-	<div class="span3"><?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_callouts.php"); ?></div>
 </div>
-		
+
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_footer.php"); ?>

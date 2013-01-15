@@ -16,7 +16,7 @@ a.ref{text-decoration:none;vertical-align:super;font-size:0.8em;display:inline-b
 
 /* reference popup */
 #reference-popup {display:none;position:absolute;z-index:9001;top:0;left:0;width:760px;background-color:#fff;padding:0 10px;border-top:12px solid #415e9d;}
-#reference-cancel-btn{cursor:pointer;float:right;margin:0 10px 0 0;background:transparent url(/img/ui/btn-close.png) no-repeat 0 0;width:33px;height:33px;}
+#reference-cancel-btn{cursor:pointer;float:right;margin:0 10px 0 0;background:transparent url(/assets/img/ui/btn-close.png) no-repeat 0 0;width:33px;height:33px;}
 #reference-cancel-btn:hover{background-position:0 -35px;}
 #references-container{padding:0 10px 10px;}
 #reference-close-banner{cursor:pointer;float:left;margin:10px 0;padding:6px;background-color:#415e9d;width:auto;height:23px;font-weight:bold;color:#fff;font-size:1.5em;}

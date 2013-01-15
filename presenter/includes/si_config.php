@@ -10,7 +10,8 @@ if (!defined('PHP_VERSION_ID')) {
 }
 
 // minify library requires PHP 5.2.1, so disable it if not available (won't work on baxdev)
-define('MINIFIER_ENABLED', (PHP_MAJOR_VERSION>=5 && PHP_MINOR_VERSION>=2) ? true : false);
+//define('MINIFIER_ENABLED', (PHP_MAJOR_VERSION>=5 && PHP_MINOR_VERSION>=2) ? true : false);
+define('MINIFIER_ENABLED', (PHP_MAJOR_VERSION>=5 && PHP_MINOR_VERSION>=2) ? false : false);
 
 $CORE_PARAMS = array();
 $CORE_PARAMS['title'] = '';
@@ -24,6 +25,7 @@ $CORE_PARAMS['stylesheets'] = array(
 	array('file' => 'bootstrap.min.css', 'media' => 'all'),
 	array('file' => 'bootstrap-responsive.min.css', 'media' => 'only screen and (max-device-width: 767px)'),
 	array('file' => 'si.css', 'media' => 'all'),
+	array('file' => 'siren.css', 'media' => 'all'),
 	array('file' => 'video-js.min.css', 'media' => 'all')
 );
 $CORE_PARAMS['scripts'] = array('si.js', 'video.min.js');

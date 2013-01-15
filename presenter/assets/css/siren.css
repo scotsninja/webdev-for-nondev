@@ -1,0 +1,62 @@
+/*
+	sireninteractive.com
+	design: Kasia Wandowska
+	code: Rob Laucius, Kyle Knox
+	ver 20120802
+*/
+
+html{-webkit-text-size-adjust:none;}
+body{margin:0 auto;padding:0;font:x-small Arial,sans-serif;color:#000;background-color:#fff;}
+.clearboth{clear:both;}
+
+h1{color:#ed8634;margin:0 0 10px;padding:0;font:1.7em Verdana,sans-serif;letter-spacing:.05em;}
+h2{color:#ed8634;padding:0;font:1.3em Verdana,sans-serif;letter-spacing:.05em;margin:10px 0 0;}
+h2 a,h2 a:link,h2 a:visited{color:#ed8634;text-decoration:none;background:transparent url(/assets/img/ui/a_new_window_bg.gif) no-repeat 100% 75%;padding-right:23px;}
+h2 a:hover,h2 a:active{color:#7ca32a;}
+h3{color:#000;margin:0 0 10px;padding:0;font:bold 1em Verdana,sans-serif;}
+a:link,a:visited{color:#648022;}
+a:hover,a:active{color:#d68820;outline:none;}
+a sup,sup{font-size:.6em;}
+.linkedin{background:transparent url(/assets/img/ui/linkedin-icon.png) no-repeat 100% 50%;padding:0 18px 0 0;}
+
+#metadata {width:830px;padding:10px 0;min-height:75px;background:#fff;font:12px/14px Verdana;margin:0 auto;border-bottom:2px solid #666;}
+
+/* list styles */
+ul{padding-left:14px;}
+ul li{line-height:1.8em;}
+.ob{list-style-type:none;margin:10px 0 10px 10px;padding:0;}
+.ob li{background:transparent url(/assets/img/ui/menu_ah_bg.gif) no-repeat -8px .75em;padding:2px 0 2px 15px;}
+
+#content{font:1.15em/1.8em verdana;padding-bottom:15px;color:#666;}
+#content .mid {text-align:center;}
+#content a {text-decoration:underline;}
+
+em.h2-inline {font-style:normal;color:#ed8634;font-weight:bold;letter-spacing:.05em;font:1.3em Verdana, sans-serif;}
+
+input.error, textarea.error {border-color:#B94A48 !important;color:#B94A48 !important;}
+
+#mask{position:absolute;top:0;left:0;z-index:9000;background-color:#222;display:none;}
+
+/* header styles */
+#header{height:75px;}
+#header #logo{padding-top:20px;width:19%;float:left;margin-left:30px;}
+#header #logo img{border:0;}
+#header #tagline{font-size:2.5em;margin-top:10px;}
+#header #social-header{overflow:hidden;position:absolute;right:40px;margin-top:8px;}
+#header #social-header a{float:left;width:auto;padding:0;margin-right:12px;}
+#header #social-header #youtube{margin:0;}
+#header #qnav{list-style-type:none;margin:10px 0 0;padding:0;width:164px;position:absolute;bottom:0;right:0;}
+#header #qnav li{float:left;}
+#header #qnav li a{font:bold 10px/20px Verdana,sans-serif;height:20px;padding:0 5px;text-align:right;width:80px;float:none;text-decoration:none;}
+
+/* dropdown menu for mobile */
+#header #nav-wrap{position:relative;height:55px;padding-top:20px;float:right;width:75%;}
+#header #menu-icon{color:#000;padding:0;width:75px;display:none;margin-left:auto;}
+
+/* footer styles */
+#footer{font:1em verdana;clear:both;background:transparent url(/assets/img/ui/footer_bg.gif) repeat-x 0 0;margin:0 5px;padding-top:20px;}
+#footer #contact{clear:right;text-align:center;margin-bottom:20px;}
+#footer ul{margin:5px auto;padding:0;list-style-type:none;}
+#footer ul li{display:inline;padding:2px;}
+#footer,#footer a,#footer a:link,#footer a:visited{color:#6b6353;text-decoration:none;}
+#footer a:hover,#footer a:active{text-decoration:underline;}
