@@ -41,3 +41,15 @@ a.ref{text-decoration:none;vertical-align:super;font-size:0.8em;display:inline-b
 #metadata .wrapper p strong{display:block;}
 #metadata .wrapper p span{font-style:italic;}
 #metadata #ga_last{display:none;}
+
+.lectures{margin-top:20px;}
+.lecture{float:left;width:300px;border-radius:6px;border:1px solid #666;margin:0 8px 12px;padding:12px;background-color:#eee;}
+.lecture a.btn{color:#fff;margin-top:12px;}
+.lectures .lecture:first-child{margin-left:0;}
+.lectures .lecture:last-child{margin-right:0;}
+.lecture .line{text-align:right;}
+.lecture h3{font-size:1.8em;margin:0;}
+.lecture h4{font-size:1.3em;margin:0;font-weight:normal;}
+.lecture p{margin:12px 0;}
+.lecture .author{font-style:italic;}
+.lecture .date{font-style:italic;}

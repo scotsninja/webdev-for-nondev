@@ -1,12 +1,40 @@
 <?php
+
+require_once('./includes/si_functions.php');
+
 $settings['title'] = 'Home | Lecture Presentation Platform (Clio)';
 $settings['body_classes'] = array('home','example');
+
+$xml = 'includes/lectures.xml';
+$lectures = xml2array($xml);
+$lectures = $lectures['lectures']['lecture'];
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 
 <div class="row-fluid">
 	<div class="span12">
-		{links to each lecture}
+		<div class="lectures clearfix">
+		<?php if (is_array($lectures)) {
+			foreach($lectures as $l) {
+				$dt = ($l['date_updated'] != '') ? $l['date_updated'] : $l['date_created'];
+				$dtObj = new DateTime($dt); ?>
+				<div class="lecture">
+					<h3><?php echo $l['title']; ?></h3>
+					<?php if ($l['subtitle'] != '') { ?>
+						<h4><?php echo $l['subtitle']; ?></h4>
+					<?php } ?>
+					<?php if ($l['description'] != '') { ?>
+						<p><?php echo $l['description']; ?></p>
+					<?php } ?>
+					<div class="line author">By: <?php echo $l['author']; ?></div>
+					<div class="line date">Last updated: <?php echo sprintf('%s (%s)', $dtObj->format('F dS, Y'), $l['version']); ?></div>
+					<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">Watch</a>
+				</div>
+			<?php } ?>
+		<?php } else { ?>
+			<div class="alert alert-error">Error loading lectures file.</div>
+		<?php } ?>
+		</div>
 	</div>
 </div>
 
