@@ -34,8 +34,31 @@ References page
 
 ========================
 
+template1
+	header
+		img {siren logo}
+	body content
+	footer
+		div.left {url}
+		div.right {date updated}
+		div.right {version}
+	
+template2
+	header
+		img {siren logo}
+		title.right Alphabet Soup
+	body content
+	footer
+		div.left {url}
+		div.right {date updated}
+		div.right {version}
+	
 slide
-	title Alphabet Soup
-	row
-		col
-			img {}
+	include(template1/header)
+	content
+		title Alphabet Soup
+		subtitle PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?
+		row
+			col
+				img {}
+	include(template1/footer)
