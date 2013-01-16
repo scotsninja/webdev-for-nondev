@@ -42,7 +42,23 @@ function sortLectures($a, $b) {
 		return 1;
 	}
 	
-	return strcasecmp($a['title'], $b['title']);
+	// sort by series, then edition
+	$seriesComp = strcasecmp($a['series'], $b['series']);
+	if ($seriesComp !== 0) {
+		return $seriesComp;
+	}
+	
+	$editionComp = strcasecmp($a['edition'], $b['edition']);
+	if ($editionComp !== 0) {
+		return $editionComp;
+	}
+	
+	$titleComp = strcasecmp($a['title'], $b['title']);
+	if ($titleComp !== 0) {
+		return $titleComp;
+	}
+	
+	return 0;
 }
 
 function xml2array($url, $get_attributes = 1, $priority = 'tag'){

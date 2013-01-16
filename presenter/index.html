@@ -8,6 +8,7 @@ $settings['body_classes'] = array('home','example');
 $xml = 'includes/lectures.xml';
 $lectures = xml2array($xml);
 $lectures = $lectures['lectures']['lecture'];
+usort($lectures, 'sortLectures');
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 
@@ -28,7 +29,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 					<?php } ?>
 					<div class="line author">By: <?php echo $l['author']; ?></div>
 					<div class="line date">Last updated: <?php echo sprintf('%s (%s)', $dtObj->format('F dS, Y'), $l['version']); ?></div>
-					<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">Watch</a>
+					<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">View Presentation</a>
 				</div>
 			<?php } ?>
 		<?php } else { ?>
