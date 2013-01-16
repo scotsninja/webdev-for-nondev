@@ -61,6 +61,21 @@ function sortLectures($a, $b) {
 	return 0;
 }
 
+function searchLecturesByUrl($term, array &$lectures = null) {
+	if ($term == '' || !is_array($lectures)) {
+		return false;
+	}
+	
+	foreach ($lectures as $l) {
+		if(strcasecmp($term, $l['url']) === 0) {
+			return $l;
+			break;
+		}
+	}
+	
+	return false;
+}
+
 function xml2array($url, $get_attributes = 1, $priority = 'tag'){
     $contents = "";
     if (!function_exists('xml_parser_create'))
