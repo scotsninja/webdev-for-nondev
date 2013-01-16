@@ -5,7 +5,7 @@
 		<edition>1</edition>
 		<title><![CDATA[Lecture 1]]></title>
 		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
+		<url>lecture-1</url>
 		<author><![CDATA[Kyle Knox]]></author>
 		<version>1.0</version>
 		<date_updated>2013-01-16</date_updated>
@@ -17,67 +17,7 @@
 		<edition>2</edition>
 		<title><![CDATA[A Lecture 2]]></title>
 		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>series1</series>
-		<edition>3</edition>
-		<title><![CDATA[Lecture 3]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>series1</series>
-		<edition>5</edition>
-		<title><![CDATA[Lecture 4]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>series1</series>
-		<edition>4</edition>
-		<title><![CDATA[Lecture 5]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>series2</series>
-		<edition>1</edition>
-		<title><![CDATA[Different Series]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>abc</series>
-		<edition>1</edition>
-		<title><![CDATA[Alphabet]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>dragons</url>
+		<url>lecture-2</url>
 		<author><![CDATA[Kyle Knox]]></author>
 		<version>1.0</version>
 		<date_updated>2013-01-16</date_updated>

@@ -20,6 +20,8 @@ RewriteRule ^index\.aspx/?$ / [R=301,L,NC]
 RewriteRule ^index\.default.asp/?$ / [R=301,L,NC]
 RewriteRule ^index\.php/?$ / [R=301,L,NC]
 
+RewriteRule ^lectures/(.*)/?$ /lectures.php?lecture=$1 [QSA,L,NC]
+
 ErrorDocument 404 /404.html
 
 # 1 YEAR
