@@ -12,5 +12,20 @@
 		<date_updated>2013-01-16</date_updated>
 		<date_created>2013-01-15</date_created>
 		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
+		<active>1</active>
+	</lecture>
+	<lecture>
+		<series>web-development-for-non-developers</series>
+		<edition>1</edition>
+		<file><![CDATA[lecture1/slides.php]]></file>
+		<title><![CDATA[Alphabet Soup]]></title>
+		<subtitle><![CDATA[PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?]]></subtitle>
+		<url>alphabet-soup</url>
+		<author><![CDATA[Kyle Knox]]></author>
+		<version>1.0</version>
+		<date_updated></date_updated>
+		<date_created>2013-01-14</date_created>
+		<description><![CDATA[An introduction of common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.]]></description>
+		<active>0</active>
 	</lecture>
 </lectures>

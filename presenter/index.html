@@ -7,7 +7,7 @@ $settings['body_classes'] = array('home','example');
 
 $xml = 'includes/lectures.xml';
 $lectures = xml2array($xml);
-$lectures = (count($lectures['lectures'])==1) ? $lectures['lectures'] : $lectures['lectures']['lecture'];
+$lectures = $lectures['lectures']['lecture'];
 usort($lectures, 'sortLectures');
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
@@ -15,22 +15,28 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 <div class="row-fluid">
 	<div class="span12">
 		<div class="lectures clearfix">
-		<?php if (is_array($lectures)) {
+		<?php if (is_array($lectures)) { 
 			foreach($lectures as $l) {
-				$dt = ($l['date_updated'] != '') ? $l['date_updated'] : $l['date_created'];
-				$dtObj = new DateTime($dt); ?>
-				<div class="lecture">
-					<h3><?php echo $l['title']; ?></h3>
-					<?php if ($l['subtitle'] != '') { ?>
-						<h4><?php echo $l['subtitle']; ?></h4>
-					<?php } ?>
-					<?php if ($l['description'] != '') { ?>
-						<p><?php echo $l['description']; ?></p>
-					<?php } ?>
-					<div class="line author">By: <?php echo $l['author']; ?></div>
-					<div class="line date">Last updated: <?php echo sprintf('%s (%s)', $dtObj->format('F dS, Y'), $l['version']); ?></div>
-					<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">View Presentation</a>
-				</div>
+				if ($l['active']){
+					$dt = (is_string($l['date_updated']) && $l['date_updated'] != '') ? $l['date_updated'] : $l['date_created'];
+					try {
+						$dtObj = new DateTime($dt);
+					} catch (Exception $e){
+						$dtObj = new DateTime();
+					} ?>
+					<div class="lecture">
+						<h3><?php echo $l['title']; ?></h3>
+						<?php if ($l['subtitle'] != '') { ?>
+							<h4><?php echo $l['subtitle']; ?></h4>
+						<?php } ?>
+						<?php if ($l['description'] != '') { ?>
+							<p><?php echo $l['description']; ?></p>
+						<?php } ?>
+						<div class="line author">By: <?php echo $l['author']; ?></div>
+						<div class="line date">Last updated: <?php echo sprintf('%s (%s)', $dtObj->format('F dS, Y'), $l['version']); ?></div>
+						<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">View Presentation</a>
+					</div>
+				<?php } ?>
 			<?php } ?>
 		<?php } else { ?>
 			<div class="alert alert-error">Error loading lectures file.</div>

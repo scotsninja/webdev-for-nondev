@@ -11,8 +11,7 @@ $xml = 'includes/lectures.xml';
 $lectures = xml2array($xml);
 
 // search lectures
-$l = (count($lectures['lectures'])==1) ? $lectures['lectures'] : $lectures['lectures']['lecture'];
-$thisLecture = searchLecturesByUrl($_GET['lecture'], $l);
+$thisLecture = searchLecturesByUrl($_GET['lecture'], $lectures['lectures']['lecture']);
 
 if (!$thisLecture) {
 	header('location:/');

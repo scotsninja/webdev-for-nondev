@@ -67,7 +67,7 @@ function searchLecturesByUrl($term, array &$lectures = null) {
 	}
 	
 	foreach ($lectures as $l) {
-		if(strcasecmp($term, $l['url']) === 0) {
+		if(strcasecmp($term, $l['url']) === 0 && $l['active'] == 1) {
 			return $l;
 			break;
 		}
