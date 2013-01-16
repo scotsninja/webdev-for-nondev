@@ -8,6 +8,7 @@
 		<subtitle><![CDATA[Subtitle]]></subtitle>
 		<url>lecture-1</url>
 		<author><![CDATA[Kyle Knox]]></author>
+		<theme>default</theme>
 		<version>1.0</version>
 		<date_updated>2013-01-16</date_updated>
 		<date_created>2013-01-15</date_created>
