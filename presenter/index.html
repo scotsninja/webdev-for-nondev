@@ -7,7 +7,7 @@ $settings['body_classes'] = array('home','example');
 
 $xml = 'includes/lectures.xml';
 $lectures = xml2array($xml);
-$lectures = $lectures['lectures']['lecture'];
+$lectures = (count($lectures['lectures'])==1) ? $lectures['lectures'] : $lectures['lectures']['lecture'];
 usort($lectures, 'sortLectures');
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>

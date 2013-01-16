@@ -3,22 +3,10 @@
 	<lecture>
 		<series>series1</series>
 		<edition>1</edition>
+		<file><![CDATA[lecture1/slides.php]]></file>
 		<title><![CDATA[Lecture 1]]></title>
 		<subtitle><![CDATA[Subtitle]]></subtitle>
 		<url>lecture-1</url>
-		<author><![CDATA[Kyle Knox]]></author>
-		<version>1.0</version>
-		<date_updated>2013-01-16</date_updated>
-		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-	</lecture>
-	<lecture>
-		<series>series1</series>
-		<edition>2</edition>
-		<title><![CDATA[A Lecture 2]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>lecture-2</url>
-		<theme>sky</theme>
 		<author><![CDATA[Kyle Knox]]></author>
 		<version>1.0</version>
 		<date_updated>2013-01-16</date_updated>

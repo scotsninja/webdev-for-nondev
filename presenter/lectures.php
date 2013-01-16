@@ -11,7 +11,8 @@ $xml = 'includes/lectures.xml';
 $lectures = xml2array($xml);
 
 // search lectures
-$thisLecture = searchLecturesByUrl($_GET['lecture'], $lectures['lectures']['lecture']);
+$l = (count($lectures['lectures'])==1) ? $lectures['lectures'] : $lectures['lectures']['lecture'];
+$thisLecture = searchLecturesByUrl($_GET['lecture'], $l);
 
 if (!$thisLecture) {
 	header('location:/');
@@ -26,19 +27,12 @@ $settings['stylesheets'][] = array('file' => 'reveal.min.css', 'media' => 'all')
 $settings['stylesheets'][] = array('file' => 'theme/'.$theme.'.css', 'media' => 'all');
 $settings['scripts'][] = 'reveal.js';
 $settings['js'] .= '
-Reveal.initialize({transition:"default"});';
+Reveal.initialize({});';
 
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header_presentation.php"); ?>
 
 <div class="reveal">
-	<div class="slides">
-		<section>
-			<pre><?php var_dump($_GET['lecture'], $thisLecture); ?></pre>
-		</section>
-		<section>
-			<p>Another slide</p>
-		</section>
-	</div>
+	<?php include('../'.$thisLecture['file']); ?>
 </div>
 
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_footer.php"); ?>
