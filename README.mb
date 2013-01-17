@@ -1,0 +1,29 @@
+# Web Developing for the Non-Developer
+
+A series of lectures to introduce people to the ideas, technologies and techniques of web development and software design, in general.
+
+This is aimed at those people who are not programmers themselves, but work directly with programmers, and who would benefit from an expanded lexicon of technical jargon and enhanced understanding of the procedures and methods used by web developers.
+
+## Lectures
+
+## Structure
+
+This repository is divided into two main sections:
+- lectures: Contains the notes, scripts and markup for each of the individual presentations.
+- presenter: Contains a website that uses a JavaScript library to present the individual lectures in a slideshow-/Powerpoint-esque presentation.
+
+## Release Process
+
+### Branches
+- master: this contains the live, publicly available version of everything
+- presenter: used for testing updates to the presentation platform
+- lectureX: each lecture should have its own branch during development, so that it may remain private and not accessible to everyone
+
+### Creating new lecture
+- Checkout new branch for lectureX from master
+- Write lecture notes and script
+- Write presentation markup
+- Merge lectureX with master
+- Test presentation on web
+- Merge master with lectureX
+- Merge remote (public version) with local master to make updates live
