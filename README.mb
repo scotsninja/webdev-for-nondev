@@ -6,6 +6,10 @@ This is aimed at those people who are not programmers themselves, but work direc
 
 ## Lectures
 
+### Alphabet Soup: PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?
+
+An introduction to common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.
+
 ## Structure
 
 This repository is divided into two main sections:
