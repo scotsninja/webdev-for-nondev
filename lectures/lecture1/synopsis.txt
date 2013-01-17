@@ -1,6 +1,6 @@
 Title: Alphabet Soup: PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?
 Length: 30min
-Description: An introduction of common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.
+Description: An introduction to common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.
 Goals: A basic understanding of the differentiation of different types of web technologies, as well as examples of the most commonly used technologies at Siren.
 Topics covered:
 	front-end:
