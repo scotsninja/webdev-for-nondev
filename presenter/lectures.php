@@ -7,7 +7,9 @@ if ($_GET['lecture'] == '') {
 }
 
 // load lectures
-$xml = '../lectures/lectures.xml';
+$lectureDir = '../lectures/';
+
+$xml = $lectureDir.'lectures.xml';
 $lectures = xml2array($xml);
 
 // search lectures
@@ -31,7 +33,7 @@ Reveal.initialize({});';
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header_presentation.php"); ?>
 
 <div class="reveal">
-	<?php include('../'.$thisLecture['file']); ?>
+	<?php include($lectureDir.$thisLecture['file']); ?>
 </div>
 
 <?php include($_SERVER['DOCUMENT_ROOT']."/includes/si_footer.php"); ?>
