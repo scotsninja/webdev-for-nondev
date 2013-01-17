@@ -73,11 +73,11 @@ slide[1]
 		title
 		row 
 			col
-				img {animation of acroynms fading in randomly}
+				img {animation of acronyms fading in randomly}
 		row
 			col
 				block
-					i Let's just get this over with
+					italic Let's just get this over with
 	include(template2/footer)
 	
 slide[2].title
@@ -111,9 +111,9 @@ slide[3]
 				col
 					heading Examples
 					block
-						li HTML (HyperText Markup Language)
-						li CSS (Cascading StyleSheets)
-						li XML (eXtensible Markup Language
+						li HTML (Hypertext Markup Language)
+						li CSS (Cascading Style Sheets)
+						li XML (Extensible Markup Language)
 						li Flash
 						li JavaScript (+ libraries)
 						li DOM (Document Object Model)
@@ -147,17 +147,18 @@ slide[4]
 			subtitle The back-end
 			row
 				col
-					heading Examples
+					heading Examples - Programming
 					block
-						li Programming
-							li PHP (PHP: Hypertext Preprocessor)
-							li .NET
-							li ROR (Ruby on Rails)
-							li SSI (Server Side Includes)
-							li Perl
-							li Java
-							li Python
-		include(tempalte2/footer)
+						li PHP (PHP: Hypertext Preprocessor)
+						li ASP.NET
+						li ROR (Ruby on Rails)
+						li SSI (Server Side Includes)
+						li Perl
+						li Java
+						li Python
+				col
+					img {picture of horse with arrow pointing to rear}
+		include(template2/footer)
 
 	slide[4][2]
 		include(template2/header)
@@ -166,19 +167,18 @@ slide[4]
 			subtitle The back-end
 			row
 				col
-					heading Examples
+					heading Examples - Storage
 					block
-						li Storage
-							li RDBMS (Relational Database Management System)
-								li MySQL
-								li SQL Server
-								li Oracle Database
-							li SQL (Structured Query Langauge)
-							li NoSQL
-								li CouchDB
-								li MongoDB
-							li XML (eXtensbile Markup Language)
-							li INI
+						li RDBMS (Relational Database Management System)
+							li MySQL
+							li SQL Server
+							li Oracle Database
+						li SQL (Structured Query Language)
+						li NoSQL
+							li CouchDB
+							li MongoDB
+						li XML (Extensible Markup Language)
+						li INI
 				col
 					img {picture of horse with arrow pointing to rear}
 		include(template2/footer)
@@ -190,27 +190,39 @@ slide[4]
 			subtitle The back-end
 			row
 				col
-					heading Examples
+					heading Examples - The Server
 					block
-						li The Server
-							li Apache
-							li IIS (Internet Information Services)
-							li Nginx (Engine-X)
-							li Node.js
-							li crontab
-							li LAMP (Linux Apache MySQL PHP)
-						li The Web
-							li HTTP (HyperText Transfer Protocol)
-							li FTP (File Transer Protocol)
-							li SSL (Secure Sockets Layer)
-							li TCP/IP (Transmission Control Protocol/Internet Protocol)
-							li DNS (Domain Name System)
-								li URL (Universal Resource Locator)
-								li URI (Universal Resource Indicator)
-								li CNAME (Canonical Name)
-								li TLD (Top-Level Domain)
-								li SLD (Second-Level Domain)
-								li subdomain
+						li Apache
+						li IIS (Internet Information Services)
+						li Nginx ("Engine-X")
+						li Node.js
+						li crontab
+						li LAMP (Linux Apache MySQL PHP)
+				col
+					img {picture of horse with arrow pointing to rear}
+		include(template2/footer)
+	
+	slide[4][4]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The back-end
+			row
+				col
+					heading Examples - The Web
+					block
+						li HTTP (Hypertext Transfer Protocol)
+						li FTP (File Transfer Protocol)
+						li SSL (Secure Sockets Layer)
+						li TCP/IP (Transmission Control Protocol/Internet Protocol)
+						li DNS (Domain Name System)
+							li IP Address
+							li URL (Uniform Resource Locator)
+							li URI (Uniform Resource Indicator)
+							li CNAME (Canonical Name)
+							li TLD (Top-Level Domain)
+							li SLD (Second-Level Domain)
+							li subdomain
 				col
 					img {picture of horse with arrow pointing to rear}
 		include(template2/footer)
@@ -237,7 +249,7 @@ slide[5]
 		include(template2/header)
 		content
 			title Making sense of it all
-			subtitle The back-end
+			subtitle Tying it all together
 			row
 				col
 					heading Examples
@@ -250,7 +262,8 @@ slide[5]
 						li SOAP (Simple Object Access Protocol)
 						li AJAX (Asynchronous JavaScript and XML)
 						li JSON (JavaScript Object Notation)
-						li XML (eXtensible Markup Language)
+						li XML (Extensible Markup Language)
+						li WebSocket
 						li RSS/Atom
 						li XSS (Cross-site Scripting)
 				col
@@ -269,7 +282,7 @@ slide[6]
 					li The source code and project requirements
 					li Runs on the developer's computer
 			col
-				img {'developers developer developers' clip}
+				img {'developers developers developers' clip}
 	include(template2/footer)
 	
 	slide[6][1]
@@ -282,17 +295,17 @@ slide[6]
 					heading Examples
 					block
 						li Environment
-							li XAMPP
+							li XAMPP (Cross-platfrom Apache MySQl PHP Perl)
 							li Cygwin
 							li Version control
 						li Coding
+							li Text editors
+								li Notepad++
+								li vi/Vim/Emacs
 							li IDE (Integrated Development Environment)
 								li Eclipse
 								li Visual Studio
 								li NetBeans
-							li Text editors
-								li Notepad++
-								li vi/Vim/Emacs
 							li SDK (Software Development Kit)
 							li MVC (Model-View-Controller)
 				col
@@ -305,10 +318,12 @@ slide[7]
 		title What does Siren use?
 		row
 			col
-				heading Rob/Kyle
-				li Sitecore
+				heading Rob and Kyle
 				li Eclipse
-				li Notepadd++
+				li Notepad++
+				li Adobe Flash
+				li Sitecore
+				li Firebug and Chrome Developer Tools
 				li Git
 			col
 				heading Server
@@ -318,21 +333,19 @@ slide[7]
 				li PHP
 				li .NET
 			col
-				heading Communication
+				heading Web 2.0
 				li AJAX
 				li jQuery
 				li APIs
 					li ExactTarget
-					li Facebook
-					li Twitter
-					li Google+
 					li Google Analytics
+					li Social networks
 			col
 				heading Client
-				li jQuery
 				li HTML
 				li CSS
 				li JavaScript
+				li jQuery
 	include(template2/footer)
 
 slide[8]
@@ -344,12 +357,11 @@ slide[8]
 			heading Key Questions
 			heading Your Questions
 	include(template2/footer)
-	
 
 slide[9]
 	include(template2/header)
 	content
-		title References and Additional Information
+		title Additional Information
 		row
 			col
 				block
