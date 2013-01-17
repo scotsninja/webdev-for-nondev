@@ -5,7 +5,7 @@ require_once('./includes/si_functions.php');
 $settings['title'] = 'Home | Lecture Presentation Platform (Clio)';
 $settings['body_classes'] = array('home','example');
 
-$xml = 'includes/lectures.xml';
+$xml = '../lectures/lectures.xml';
 $lectures = xml2array($xml);
 $lectures = $lectures['lectures']['lecture'];
 usort($lectures, 'sortLectures');

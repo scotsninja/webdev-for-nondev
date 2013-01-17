@@ -7,7 +7,7 @@ if ($_GET['lecture'] == '') {
 }
 
 // load lectures
-$xml = 'includes/lectures.xml';
+$xml = '../lectures/lectures.xml';
 $lectures = xml2array($xml);
 
 // search lectures
