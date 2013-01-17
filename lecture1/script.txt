@@ -224,6 +224,7 @@ slide[5]
 				block
 					li It's not front-end vs back-end
 					li It's not client vs server
+					li It's abstraction
 					li It's communication
 					li It's connection
 					li It's the Internet
@@ -232,10 +233,6 @@ slide[5]
 	include(template2/footer)
 	
 	slide[5][1]
-		/*
-		this is the superhighway
-			API, SOAP, oAuth, JSON, XML, AJAX, FTP, HTTP, SSL, SSH, RSS, Atom, CMS, WYSIWYG, SaaS, XSS
-		*/
 		include(template2/header)
 		content
 			title Making sense of it all
@@ -244,17 +241,17 @@ slide[5]
 				col
 					heading Examples
 					block
-						li API
-						li RSS/Atom
-						li REST (Representational State Transfer)
-						li SOAP (Simple Object Access Protocol)
-						li JSON (JavaScript Object Notation)
-						li XML (eXtensible Markup Language)
-						li AJAX
-						li XSS
 						li CMS (Content Management System)
 						li WYSIWYG (What You See Is What You Get)
+						li API (Application Programming Interface)
 						li SaaS (Software as a Service)
+						li REST (Representational State Transfer)
+						li SOAP (Simple Object Access Protocol)
+						li AJAX (Asynchronous JavaScript and XML)
+						li JSON (JavaScript Object Notation)
+						li XML (eXtensible Markup Language)
+						li RSS/Atom
+						li XSS (Cross-site Scripting)
 				col
 					img {node graph of Internet connections}
 		include(template2/footer)
