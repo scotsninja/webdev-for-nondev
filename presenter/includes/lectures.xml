@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lectures>
 	<lecture>
-		<series>series1</series>
+		<series>xyz</series>
 		<edition>1</edition>
 		<file><![CDATA[lecture1/slides.php]]></file>
-		<title><![CDATA[Lecture 1]]></title>
-		<subtitle><![CDATA[Subtitle]]></subtitle>
-		<url>lecture-1</url>
+		<title><![CDATA[Lecture 0]]></title>
+		<subtitle><![CDATA[Do Not Remove!]]></subtitle>
+		<url>xyz-do-not-remove</url>
 		<author><![CDATA[Kyle Knox]]></author>
 		<version>1.0</version>
 		<date_updated>2013-01-16</date_updated>
 		<date_created>2013-01-15</date_created>
-		<description><![CDATA[This is the description for this lecture. It is a lecture of the lecture series. Check it out!]]></description>
-		<active>1</active>
+		<description><![CDATA[Do not remove! This is here to prevent a bug when translating the XML into an associative array.]]></description>
+		<active>0</active>
 	</lecture>
 	<lecture>
 		<series>web-development-for-non-developers</series>
@@ -23,9 +23,9 @@
 		<url>alphabet-soup</url>
 		<author><![CDATA[Kyle Knox]]></author>
 		<version>1.0</version>
-		<date_updated></date_updated>
+		<date_updated>2013-01-17</date_updated>
 		<date_created>2013-01-14</date_created>
-		<description><![CDATA[An introduction of common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.]]></description>
-		<active>0</active>
+		<description><![CDATA[An introduction to common web technologies, focusing on the differences between front- and back-end, server, transport and developer technologies.]]></description>
+		<active>1</active>
 	</lecture>
 </lectures>
