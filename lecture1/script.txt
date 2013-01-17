@@ -118,6 +118,7 @@ slide[3]
 						li JavaScript (+ libraries)
 						li DOM (Document Object Model)
 						li The browser
+						li The client
 				col
 					img {person on the computer}
 		include(template2/footer)
@@ -125,132 +126,212 @@ slide[3]
 slide[4]
 	include(template2/header)
 	content
+		title Making sense of it all
+		subtitle The back-end
+		row
+			col
+				block
+					li Does everything else
+						li Stores the user's data
+						li Manipulates the user's data
+						li Builds and serves the webpage
+					li Runs on a server somewhere
+			col
+				img {picture of horse with arrow pointing to rear}
 	include(template2/footer)
 	
-slide[]
+	slide[4][1]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The back-end
+			row
+				col
+					heading Examples
+					block
+						li Programming
+							li PHP (PHP: Hypertext Preprocessor)
+							li .NET
+							li ROR (Ruby on Rails)
+							li SSI (Server Side Includes)
+							li Perl
+							li Java
+							li Python
+		include(tempalte2/footer)
+
+	slide[4][2]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The back-end
+			row
+				col
+					heading Examples
+					block
+						li Storage
+							li RDBMS (Relational Database Management System)
+								li MySQL
+								li SQL Server
+								li Oracle Database
+							li SQL (Structured Query Langauge)
+							li NoSQL
+								li CouchDB
+								li MongoDB
+							li XML (eXtensbile Markup Language)
+							li INI
+				col
+					img {picture of horse with arrow pointing to rear}
+		include(template2/footer)
+
+	slide[4][3]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The back-end
+			row
+				col
+					heading Examples
+					block
+						li The Server
+							li Apache
+							li IIS (Internet Information Services)
+							li Node.js
+							li crontab
+							li LAMP (Linux Apache MySQL PHP)
+						li The Web
+							li HTTP (HyperText Transfer Protocol)
+							li FTP
+							li SSL (Secure Sockets Layer)
+							li TCP/IP (Transmission Control Protocol/Internet Protocol)
+							li DNS (Domain Name System)
+								li URL (Universal Resource Locator)
+								li URI (Universal Resource Indicator)
+								li CNAME (Canonical Name)
+								li TLD (Top-Level Domain)
+								li SLD (Second-Level Domain)
+								li subdomain
+				col
+					img {picture of horse with arrow pointing to rear}
+		include(template2/footer)
+		
+slide[5]
 	include(template2/header)
 	content
+		title Making sense of it all
+		subtitle Tying it all together
+		row
+			col
+				block
+					li It's not front-end vs back-end
+					li It's not client vs server
+					li It's communication
+					li It's connection
+					li It's the Internet
+			col
+				img {node graph of Internet connections}
+	include(template2/footer)
+	
+	slide[5][1]
+		/*
+		this is the superhighway
+			API, SOAP, oAuth, JSON, XML, AJAX, FTP, HTTP, SSL, SSH, RSS, Atom, CMS, WYSIWYG, SaaS, XSS
+		*/
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The back-end
+			row
+				col
+					heading Examples
+					block
+						li API
+						li RSS/Atom
+						li REST (Representational State Transfer)
+						li SOAP (Simple Object Access Protocol)
+						li JSON (JavaScript Object Notation)
+						li XML (eXtensible Markup Language)
+						li AJAX
+						li XSS
+						li CMS (Content Management System)
+						li WYSIWYG (What You See Is What You Get)
+						li SaaS (Software as a Service)
+				col
+					img {node graph of Internet connections}
+		include(template2/footer)
+
+slide[6]
+	include(template2/header)
+	content
+		title Making sense of it all
+		subtitle The development
+		row
+			col
+				block
+					li Makes everything possible
+					li The source code and project requirements
+					li Runs on the developer's computer
+			col
+				img {}
+	include(template2/footer)
+	
+	slide[6][1]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The development
+			row
+				col
+					heading Examples
+					block
+						li Environment
+							li XAMPP
+							li Cygwin
+							li Version control
+						li Coding
+							li IDE (Integrated Development Environment)
+								li Eclipse
+								li Visual Studio
+								li NetBeans
+							li Text editors
+								li Notepad++
+								li vi/Vim/Emacs
+							li SDK (Software Development Kit)
+							li MVC (Model-View-Controller)
+				col
+					img {}
+		include(template2/footer)
+
+slide[7]
+	/*
+	what does siren do
+	multiple steps toward user
+		back > front > client
+	*/
+	include(template2/header)
+	content
+		title What does Siren use?
+		row
+			col
+				heading Rob/Kyle
+			col
+				heading Server
+			col
+				heading Communication
+			col
+				heading Client
 	include(template2/footer)
 
-slide[]
+slide[8]
+	/*
+	closing
+		key ideas
+		key questions
+		open questions
+	*/
 	include(template2/header)
 	content
 	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
-
-slide[]
-	include(template2/header)
-	content
-	include(template2/footer)
+	
 
 slide[]
 	include(template2/header)
