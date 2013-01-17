@@ -20,7 +20,7 @@ this is the server
 this is the superhighway
 	API, SOAP, oAuth, JSON, XML, AJAX, FTP, HTTP, SSL, SSH, RSS, Atom, CMS, WYSIWYG, SaaS, XSS
 this is the development environment
-	SVN, Git, IDE, XAMPP, SDK, W3C, WAI, Section 508, WCAG
+	SVN, Git, IDE, XAMPP, SDK, W3C, WAI, Section 508, WCAG, MVC
 what does siren do
 	multiple steps toward user
 		back > front > client
@@ -34,14 +34,17 @@ References page
 
 ========================
 
+/* templates */
+
 template1
 	header
 		img {siren logo}
 	body content
 	footer
-		div.left {url}
-		div.right {date updated}
-		div.right {version}
+		block.left {url}
+		block.right
+			{date updated}
+			{version}
 	
 template2
 	header
@@ -49,16 +52,228 @@ template2
 		title.right Alphabet Soup
 	body content
 	footer
-		div.left {url}
-		div.right {date updated}
-		div.right {version}
-	
-slide
+		block.left {url}
+		block.right
+			{date updated}
+			{version}
+
+/* slides */
+
+slide[0]
 	include(template1/header)
 	content
 		title Alphabet Soup
 		subtitle PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?
+		block Presented by {name}
+	include(template1/footer)
+	
+slide[1]
+	include(template2/header)
+	content
+		title
+		row 
+			col
+				img {animation of acroynms fading in randomly}
 		row
 			col
-				img {}
-	include(template1/footer)
+				block
+					i Let's just get this over with
+	include(template2/footer)
+	
+slide[2].title
+	include(template2/header)
+	content
+		title Making sense of it all
+		subtitle What does what?
+	include(template2/footer)
+	
+slide[3]
+	include(template2/header)
+	content
+		title Making sense of it all
+		subtitle The front-end
+		row
+			col
+				block
+					li What the user sees
+					li What the user interacts with
+					li Runs in the user's browser
+			col
+				img {person on the computer}
+	include(template2/footer)
+
+	slide[3][1]
+		include(template2/header)
+		content
+			title Making sense of it all
+			subtitle The front-end
+			row
+				col
+					heading Examples
+					block
+						li HTML (HyperText Markup Language)
+						li CSS (Cascading StyleSheets)
+						li XML (eXtensible Markup Language
+						li Flash
+						li JavaScript (+ libraries)
+						li DOM (Document Object Model)
+						li The browser
+				col
+					img {person on the computer}
+		include(template2/footer)
+	
+slide[4]
+	include(template2/header)
+	content
+	include(template2/footer)
+	
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+	include(template2/footer)
+
+slide[]
+	include(template2/header)
+	content
+		title References and Additional Information
+		row
+			col
+				heading See Also
+				block
+					This presentation can be found at
+					{link}
+					Notes and source files also available at
+					{link}
+					{git link}
+			col
+				heading Credits
+				heading Special Thanks
+				block
+					Presentation platform built with help from the
+					li 
+						jQuery community
+						italic {link}
+					li
+						Reveal.js
+						italic {link}
+	include(template2/footer)
