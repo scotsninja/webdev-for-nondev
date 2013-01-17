@@ -195,12 +195,13 @@ slide[4]
 						li The Server
 							li Apache
 							li IIS (Internet Information Services)
+							li Nginx (Engine-X)
 							li Node.js
 							li crontab
 							li LAMP (Linux Apache MySQL PHP)
 						li The Web
 							li HTTP (HyperText Transfer Protocol)
-							li FTP
+							li FTP (File Transer Protocol)
 							li SSL (Secure Sockets Layer)
 							li TCP/IP (Transmission Control Protocol/Internet Protocol)
 							li DNS (Domain Name System)
@@ -268,7 +269,7 @@ slide[6]
 					li The source code and project requirements
 					li Runs on the developer's computer
 			col
-				img {}
+				img {'developers developer developers' clip}
 	include(template2/footer)
 	
 	slide[6][1]
@@ -295,63 +296,82 @@ slide[6]
 							li SDK (Software Development Kit)
 							li MVC (Model-View-Controller)
 				col
-					img {}
+					img {'developers developers developers' clip}
 		include(template2/footer)
 
 slide[7]
-	/*
-	what does siren do
-	multiple steps toward user
-		back > front > client
-	*/
 	include(template2/header)
 	content
 		title What does Siren use?
 		row
 			col
 				heading Rob/Kyle
+				li Sitecore
+				li Eclipse
+				li Notepadd++
+				li Git
 			col
 				heading Server
+				li IIS
+				li Apache
+				li MySQL
+				li PHP
+				li .NET
 			col
 				heading Communication
+				li AJAX
+				li jQuery
+				li APIs
+					li ExactTarget
+					li Facebook
+					li Twitter
+					li Google+
+					li Google Analytics
 			col
 				heading Client
+				li jQuery
+				li HTML
+				li CSS
+				li JavaScript
 	include(template2/footer)
 
 slide[8]
-	/*
-	closing
-		key ideas
-		key questions
-		open questions
-	*/
 	include(template2/header)
 	content
+		title
+		block
+			heading Key Ideas
+			heading Key Questions
+			heading Your Questions
 	include(template2/footer)
 	
 
-slide[]
+slide[9]
 	include(template2/header)
 	content
 		title References and Additional Information
 		row
 			col
-				heading See Also
 				block
-					This presentation can be found at
-					{link}
-					Notes and source files also available at
-					{link}
-					{git link}
+					heading See Also
+					li This presentation can be viewed at:
+						italic {link}
+					li Notes and source files also available at:
+						italic \\SIRENFS1\Homes\kknox\git\teaching
+						italic \\SIRENFS1\Homes\kknox\git\teaching\.git
+					li Articles explaining a number of these terms (and more) in detail:
+						italic http://www.skillcrush.codim/terms/
+					li 72 Essential Acronyms Related to Web Site Development
+						italic http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development
 			col
-				heading Credits
 				heading Special Thanks
 				block
-					Presentation platform built with help from the
+					Presentation platform built with help from:
 					li 
-						jQuery community
-						italic {link}
+						the jQuery community
+						italic http://jquery.com/
 					li
-						Reveal.js
-						italic {link}
+						Hakim El Hattab's Reveal.js library
+						italic https://github.com/hakimel/reveal.js
+					li and Google, for making stuff easier to find online
 	include(template2/footer)
