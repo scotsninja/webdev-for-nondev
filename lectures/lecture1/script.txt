@@ -197,6 +197,7 @@ slide[4]
 						li Nginx ("Engine-X")
 						li Node.js
 						li crontab
+						li .htaccess
 						li LAMP (Linux Apache MySQL PHP)
 				col
 					img {picture of horse with arrow pointing to rear}
