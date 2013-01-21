@@ -10,6 +10,18 @@
 </section>
 
 <section>
+	<?php $slideTitle = 'Slide Title';
+	$slideSubTitle = 'A slide about stuff'; ?>
+	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
+	<div class="body">
+		<h1>Test Slide</h1>
+		<h2>This slide is for purely testing purposes</h2>
+		<h3><?php echo TEMPLATE_DIR; ?></h3>
+	</div>
+	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
+</section>
+
+<section>
 	<?php include(TEMPLATE_DIR.'siren-header-title.php'); ?>
 	<div class="body">
 		<h1>Alphabet Soup</h1>

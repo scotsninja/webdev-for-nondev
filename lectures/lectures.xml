@@ -23,6 +23,7 @@
 		<subtitle><![CDATA[PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?]]></subtitle>
 		<url>alphabet-soup</url>
 		<author><![CDATA[Kyle Knox]]></author>
+		<theme>siren</theme>
 		<version>1.0</version>
 		<date_updated></date_updated>
 		<date_created>2013-01-14</date_created>
