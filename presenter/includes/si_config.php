@@ -43,3 +43,5 @@ if (is_array($settings)) {
 } else {
 	$settings = $CORE_PARAMS;
 }
+
+define('TEMPLATE_DIR', './templates/');
