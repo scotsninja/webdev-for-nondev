@@ -36,6 +36,8 @@ References page
 
 /* templates */
 
+garamond and calibri
+
 template1
 	header
 		img {siren logo}

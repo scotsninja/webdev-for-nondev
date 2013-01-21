@@ -30,6 +30,10 @@ $settings['scripts'][] = 'reveal.js';
 $settings['js'] .= '
 Reveal.initialize({});';
 
+define('PRESENTATION_TITLE', $thisLecture['title']);
+define('PRESENTATION_VERSION', $thisLecture['version']);
+define('PRESENTATION_DATE_UPDATED', (is_string($thisLecture['date_updated']) ? $thisLecture['date_updated'] : $thisLecture['date_created']));
+
 include($_SERVER['DOCUMENT_ROOT']."/includes/si_header_presentation.php"); ?>
 
 <div class="reveal">
