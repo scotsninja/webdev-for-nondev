@@ -1,58 +1,62 @@
 <div class="slides">
 <section>
-	<?php include(TEMPLATE_DIR.'siren-header-title.php'); ?>
 	<div class="body">
-		<h1>Test Slide</h1>
-		<h2>This slide is for purely testing purposes</h2>
-		<h3><?php echo TEMPLATE_DIR; ?></h3>
+		<h1>The Title</h1>
+		<h2 class="subtitle">The Subtitling</h2>
+		<div class="byline">Presented by {name}</div>
 	</div>
-	<?php include(TEMPLATE_DIR.'siren-footer-title.php'); ?>
+</section>
+<section>
+	<div class="header">
+		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+		<h1>The Title</h1>
+	</div>
+	<div class="body">
+		<h1>Slide Title</h1>
+		<h2>The Subtitling</h2>
+		<div class="byline">Presented by {name}</div>
+	</div>
 </section>
 
-<section>
-	<?php $slideTitle = 'Slide Title';
-	$slideSubTitle = 'A slide about stuff'; ?>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<div class="body">
-		<h1>Test Slide</h1>
-		<h2>This slide is for purely testing purposes</h2>
-		<h3><?php echo TEMPLATE_DIR; ?></h3>
-	</div>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
+
 
 <section>
-	<?php include(TEMPLATE_DIR.'siren-header-title.php'); ?>
 	<div class="body">
 		<h1>Alphabet Soup</h1>
 		<h2>PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?</h2>
-		<div>Presented by {name}</div>
+		<div>Presented by <?php echo PRESENTATION_AUTHOR; ?></div>
 	</div>
-	<?php include(TEMPLATE_DIR.'siren-footer-title.php'); ?>
 </section>
 	
 <section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
+	<div class="header">
+		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+		<h1><?php echo PRESENTATION_TITLE; ?></h1>
+	</div>
 	<div class="body">
 		<h1><em>Let&rsquo;s Just Get This Over With</em></h1>
 		row 
 			col
 				img {animation of acronyms fading in randomly}
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
 </section>
 	
 <section class="title">
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
+	<div class="header">
+		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+		<h1><?php echo PRESENTATION_TITLE; ?></h1>
+	</div>
 	<div class="body">
 		<h1>Making sense of it all</h1>
 		<h2>What does what?</h2>
 	</div>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
 </section>
 
 <section>
 	<section>
-		<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
+		<div class="header">
+			<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+			<h1><?php echo PRESENTATION_TITLE; ?></h1>
+		</div>
 		<div class="body">
 			<h1>Making sense of it all</h1>
 			<h2>The front-end</h2>
@@ -65,11 +69,13 @@
 			</div>
 			<div class="pull-left">img {person on the computer}</div>
 		</div>
-		<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
 	</section>
 	
 	<section>
-		<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
+		<div class="header">
+			<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+			<h1><?php echo PRESENTATION_TITLE; ?></h1>
+		</div>
 		<div class="body">
 			<h1>Making sense of it all</h1>
 			<h2>The front-end</h2>
@@ -88,38 +94,7 @@
 			</div>
 			<div class="pull-left">img {person on the computer}</div>
 		</div>
-		<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
 	</section>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
-</section>
-
-<section>
-	<?php include(TEMPLATE_DIR.'siren-header.php'); ?>
-	<?php include(TEMPLATE_DIR.'siren-footer.php'); ?>
 </section>
 
 <?php /*
