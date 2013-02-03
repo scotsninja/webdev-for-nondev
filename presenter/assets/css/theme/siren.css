@@ -3,7 +3,7 @@
 /**
  * Siren theme for reveal.js.
  * 
- * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2013 Kyle Knox, Siren Interactive
  */
 @font-face {
     font-family: 'EBGaramondRegular';
@@ -14,7 +14,6 @@
          url('../fonts/EBGaramond-webfont.svg#EBGaramondRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*********************************************
@@ -38,6 +37,8 @@ body {
   letter-spacing: -0.02em;
   color: #eeeeee;
 }
+
+.reveal .slides{max-width:1140px;width:90%;}
 
 ::selection {
   color: white;
@@ -63,12 +64,13 @@ body {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
-.reveal h1 {font-size:3.2em;
+.reveal h1 {font-size:2.8em;
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
-.reveal h2{font-size:1.8em;}
-
+.reveal h2{font-size:1.7em;}
 .reveal h2.subtitle{color:#ccc;}
+
+.reveal section.title h1{font-size:3.2em;margin:120px 0 40px;}
 
 /*********************************************
  * LINKS
@@ -174,15 +176,12 @@ body {
  * TEMPLATING
  *********************************************/
 
-.reveal section .header img,.reveal section .footer img{border:none;background:none;margin:0;box-shadow:none;}
+.reveal section .header img{border:none;background:none;margin:0;box-shadow:none;}
 
-.reveal section .header{text-align:left;border-bottom:3px solid #D98609;padding-bottom:12px;margin:6px 0 20px;}
-.reveal section .header h1{color:#7CA32A;margin:0 0 8px;font:2em/0.8em 'EBGaramondRegular', Arial, sans-serif;font-weight:bold;text-shadow:none;}
-.reveal section .header h2{color:#D98609;border-top:1px solid #D98609;margin:0;padding-top:6px;font:18px/27px 'EBGaramondRegular', Arial, sans-serif;}
+.reveal section .header{text-align:left;border-bottom:3px solid #D98609;padding:0;margin:6px 0 20px;min-height:64px;}
+.reveal section .header h1{color:#7CA32A;margin:0 0 8px;font:1.5em/0.8em 'EBGaramondRegular', Arial, sans-serif;font-weight:bold;text-shadow:none;}
+.reveal section .header h2.subtitle{color:#D98609;margin:0 0 8px;padding:0 0 0 10px;font:0.75em/1em 'EBGaramondRegular', Arial, sans-serif;}
 
-.reveal section .footer{text-align:left;vertical-align:top;border-top:3px solid #7CA32A;margin:20px 0 6px;padding-top:12px;color:#c0c0c0;font-size:0.6em;}
-.reveal section .footer p span{font-style:italic;}
-.reveal section .footer .span6:last-child{text-align:right;}
 
 /*********************************************
  * TEMPLATING

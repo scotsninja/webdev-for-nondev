@@ -31,7 +31,11 @@ $settings['js'] .= '
 Reveal.initialize({});';
 
 define('PRESENTATION_TITLE', $thisLecture['title']);
+define('PRESENTATION_SUBTITLE', $thisLecture['subtitle']);
 define('PRESENTATION_VERSION', $thisLecture['version']);
+define('PRESENTATION_SERIES', $thisLecture['series']);
+define('PRESENTATION_EDITION', $thisLecture['edition']);
+define('PRESENTATION_DESCRIPTION', $thisLecture['description']);
 define('PRESENTATION_AUTHOR', $thisLecture['author']);
 define('PRESENTATION_DATE_UPDATED', (is_string($thisLecture['date_updated']) ? $thisLecture['date_updated'] : $thisLecture['date_created']));
 

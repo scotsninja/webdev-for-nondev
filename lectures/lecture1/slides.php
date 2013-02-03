@@ -1,30 +1,38 @@
 <div class="slides">
+
 <section>
+	<?php echo outputHeader(); ?>
 	<div class="body">
-		<h1>The Title</h1>
-		<h2 class="subtitle">The Subtitling</h2>
-		<div class="byline">Presented by {name}</div>
+		<h1>Inside Slide 1</h1>
+		<h2>Subtitle</h2>
+		<div class="row-fluid">
+			<div class="span6">column 1</div>
+			<div class="span6">column 2</div>
+		</div>
 	</div>
 </section>
 <section>
-	<div class="header">
-		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
-		<h1>The Title</h1>
-	</div>
-	<div class="body">
-		<h1>Slide Title</h1>
-		<h2>The Subtitling</h2>
-		<div class="byline">Presented by {name}</div>
-	</div>
+	<section>
+		<?php echo outputHeader(); ?>
+		<div class="body">
+			<h1>Inside Slide 2</h1>
+			<p>Slide with sub-slides</p>
+		</div>
+	</section>
+	<section>
+		<?php echo outputHeader('The Title', 'Inside Slide 2a'); ?>
+		<div class="body">
+			<h1>Inside Slide 2.1</h1>
+			<p>This is a sub-slide</p>
+		</div>
+	</section>
 </section>
 
-
-
-<section>
+<section class="title">
 	<div class="body">
-		<h1>Alphabet Soup</h1>
-		<h2>PHP, ASP, CSS, RoR, LAMP, DNS, SVN, JSON, SSI, TDD, RSS, HTTP, XSS, CSRF, WTF?</h2>
-		<div>Presented by <?php echo PRESENTATION_AUTHOR; ?></div>
+		<h1><?php echo PRESENTATION_TITLE; ?></h1>
+		<h2 class="subtitle"><?php echo PRESENTATION_SUBTITLE; ?></h2>
+		<div class="byline">Presented by <?php echo PRESENTATION_AUTHOR; ?></div>
 	</div>
 </section>
 	
@@ -366,3 +374,17 @@ slide[9]
 	include(template2/footer)
 	*/ ?>
 </div>
+
+<?php function outputHeader($title = PRESENTATION_TITLE, $subtitle = null){
+	$ret = '<div class="header">
+		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+		<h1>'.$title.'</h1>';
+		
+	if ($subtitle != '') {
+		$ret .= '<h2 class="subtitle">'.$subtitle.'</h2>';
+	}
+	
+	$ret .= '</div>';
+	
+	return $ret;
+} ?>
