@@ -187,3 +187,8 @@ body {
  * TEMPLATING
  *********************************************/
  .reveal .byline{font-size:1.1em;color:#ccc;font-style:italic;}
+ 
+/*********************************************
+ * MISC
+ *********************************************/ 
+ .resource{display:block;font-style:italic;color:#aaa;}
