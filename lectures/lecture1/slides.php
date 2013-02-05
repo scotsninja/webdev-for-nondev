@@ -204,7 +204,7 @@
 						<li class="fragment roll-in">It&apos;s the Internet</li>
 					</ul>
 				</div>
-				<div class="span6">img {node graph of Internet connections}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
 			</div>
 		</div>
 	</section>
