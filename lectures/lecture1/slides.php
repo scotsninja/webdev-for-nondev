@@ -198,10 +198,10 @@
 					<ul>
 						<li class="fragment roll-in">It&apos;s not front-end vs back-end</li>
 						<li class="fragment roll-in">It&apos;s not client vs server</li>
-						<li class="fragment roll-in">It&apos;s abstraction</li>
-						<li class="fragment roll-in">It&apos;s communication</li>
-						<li class="fragment roll-in">It&apos;s connection</li>
-						<li class="fragment roll-in">It&apos;s the Internet</li>
+						<li class="fragment roll-in green">It&apos;s abstraction</li>
+						<li class="fragment roll-in green">It&apos;s communication</li>
+						<li class="fragment roll-in green">It&apos;s connection</li>
+						<li class="fragment roll-in green">It&apos;s the Internet</li>
 					</ul>
 				</div>
 				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
@@ -230,7 +230,7 @@
 						<li>XSS (Cross-site Scripting)</li>
 					</ul>
 				</div>
-				<div class="span6">img {node graph of Internet connections}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
 			</div>
 		</div>
 	</section>
@@ -249,7 +249,7 @@
 						<li class="fragment roll-in">Runs on the developer&apos;s computer</li>
 					</ul>
 				</div>
-				<div class="span6">vid {'developers developers developers' clip}</div>
+				<iframe width="480" height="360" src="http://www.youtube-nocookie.com/embed/8To-6VIJZRE" frameborder="0" allowfullscreen seamless></iframe>
 			</div>
 		</div>
 	</section>
@@ -289,7 +289,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="span6">vid {'developers developers developers' clip}</div>
+				<div class="span6"><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/1lqxORnQARw" frameborder="0" allowfullscreen seamless></iframe></div>
 			</div>
 		</div>
 	</section>

@@ -182,13 +182,11 @@ body {
 .reveal section .header h1{color:#7CA32A;margin:0 0 8px;font:1.5em/0.8em 'EBGaramondRegular', Arial, sans-serif;font-weight:bold;text-shadow:none;}
 .reveal section .header h2.subtitle{color:#D98609;margin:0 0 8px;padding:0 0 0 10px;font:0.75em/1em 'EBGaramondRegular', Arial, sans-serif;}
 
-
-/*********************************************
- * TEMPLATING
- *********************************************/
  .reveal .byline{font-size:1.1em;color:#ccc;font-style:italic;}
  
 /*********************************************
  * MISC
  *********************************************/ 
  .resource{display:block;font-style:italic;color:#aaa;}
+ .green{color:#7CA32A;}
+ .orange{color:#D98609;}
