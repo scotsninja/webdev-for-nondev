@@ -51,12 +51,12 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>HTML (Hypertext Markup Language)</li>
-						<li>CSS (Cascading Style Sheets)</li>
-						<li>XML (Extensible Markup Language)</li>
+						<li>HTML <span class="abbr">(Hypertext Markup Language)</span></li>
+						<li>CSS <span class="abbr">(Cascading Style Sheets)</span></li>
+						<li>XML <span class="abbr">(Extensible Markup Language)</span></li>
 						<li>Flash</li>
 						<li>JavaScript (+ libraries)</li>
-						<li>DOM (Document Object Model)</li>
+						<li>DOM <span class="abbr">(Document Object Model)</span></li>
 						<li>The browser</li>
 						<li>The client</li>
 					</ul>
@@ -93,10 +93,10 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>PHP (PHP: Hypertext Preprocessor)</li>
+						<li>PHP <span class="abbr">(PHP: Hypertext Preprocessor)</span></li>
 						<li>ASP.NET</li>
-						<li>ROR (Ruby on Rails)</li>
-						<li>SSI (Server Side Includes)</li>
+						<li>ROR <span class="abbr">(Ruby on Rails)</span></li>
+						<li>SSI <span class="abbr">(Server Side Includes)</span></li>
 						<li>Perl</li>
 						<li>Java</li>
 						<li>Python</li>
@@ -114,21 +114,21 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>RDBMS (Relational Database Management System)
+						<li>RDBMS <span class="abbr">(Relational Database Management System)</span>
 							<ul>
 								<li>MySQL</li>
 								<li>SQL Server</li>
 								<li>Oracle Database</li>
 							</ul>
 						</li>
-						<li>SQL (Structured Query Language)</li>
+						<li>SQL <span class="abbr">(Structured Query Language)</span></li>
 						<li>NoSQL
 							<ul>
 								<li>CouchDB</li>
 								<li>MongoDB</li>
 							</ul>
 						</li>
-						<li>XML (Extensible Markup Language)</li>
+						<li>XML <span class="abbr">(Extensible Markup Language)</span></li>
 						<li>INI</li>
 					</ul>
 				</div>
@@ -145,12 +145,12 @@
 				<div class="span6">
 					<ul>
 						<li>Apache</li>
-						<li>IIS (Internet Information Services)</li>
-						<li>Nginx (<q>Engine-X</q>)</li>
+						<li>IIS <span class="abbr">(Internet Information Services)</span></li>
+						<li>Nginx <span class="abbr">(<q>Engine-X</q>)</span></li>
 						<li>Node.js</li>
 						<li>crontab</li>
 						<li>.htaccess</li>
-						<li>LAMP (Linux Apache MySQL PHP)</li>
+						<li>LAMP <span class="abbr">(Linux Apache MySQL PHP)</span></li>
 					</ul>
 				</div>
 				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
@@ -165,18 +165,18 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>HTTP (Hypertext Transfer Protocol)</li>
-						<li>FTP (File Transfer Protocol)</li>
-						<li>SSL (Secure Sockets Layer)</li>
-						<li>TCP/IP (Transmission Control Protocol/Internet Protocol)</li>
-						<li>DNS (Domain Name System)
+						<li>HTTP <span class="abbr">(Hypertext Transfer Protocol)</span></li>
+						<li>FTP <span class="abbr">(File Transfer Protocol)</span></li>
+						<li>SSL <span class="abbr">(Secure Sockets Layer)</span></li>
+						<li>TCP/IP <span class="abbr">(Transmission Control Protocol/Internet Protocol)</span></li>
+						<li>DNS <span class="abbr">(Domain Name System)</span>
 							<ul>
 								<li>IP Address</li>
-								<li>URL (Uniform Resource Locator)</li>
-								<li>URI (Uniform Resource Indicator)</li>
-								<li>CNAME (Canonical Name)</li>
-								<li>TLD (Top-Level Domain)</li>
-								<li>SLD (Second-Level Domain)</li>
+								<li>URL <span class="abbr">(Uniform Resource Locator)</span></li>
+								<li>URI <span class="abbr">(Uniform Resource Indicator)</span></li>
+								<li>CNAME <span class="abbr">(Canonical Name)</span></li>
+								<li>TLD <span class="abbr">(Top-Level Domain)</span></li>
+								<li>SLD <span class="abbr">(Second-Level Domain)</span></li>
 								<li>subdomain</li>
 							</ul>
 						</li>
@@ -216,18 +216,18 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>CMS (Content Management System)</li>
-						<li>WYSIWYG (What You See Is What You Get)</li>
-						<li>API (Application Programming Interface)</li>
-						<li>SaaS (Software as a Service)</li>
-						<li>REST (Representational State Transfer)</li>
-						<li>SOAP (Simple Object Access Protocol)</li>
-						<li>AJAX (Asynchronous JavaScript and XML)</li>
-						<li>JSON (JavaScript Object Notation)</li>
-						<li>XML (Extensible Markup Language)</li>
+						<li>CMS <span class="abbr">(Content Management System)</span></li>
+						<li>WYSIWYG <span class="abbr">(What You See Is What You Get)</span></li>
+						<li>API <span class="abbr">(Application Programming Interface)</span></li>
+						<li>SaaS <span class="abbr">(Software as a Service)</span></li>
+						<li>REST <span class="abbr">(Representational State Transfer)</span></li>
+						<li>SOAP <span class="abbr">(Simple Object Access Protocol)</span></li>
+						<li>AJAX <span class="abbr">(Asynchronous JavaScript and XML)</span></li>
+						<li>JSON <span class="abbr">(JavaScript Object Notation)</span></li>
+						<li>XML</li>
 						<li>WebSocket</li>
 						<li>RSS/Atom</li>
-						<li>XSS (Cross-site Scripting)</li>
+						<li>XSS <span class="abbr">(Cross-site Scripting)</span></li>
 					</ul>
 				</div>
 				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
@@ -263,7 +263,7 @@
 					<ul>
 						<li>Environment
 							<ul>
-								<li>XAMPP (Cross-platfrom Apache MySQl PHP Perl)</li>
+								<li>XAMPP <span class="abbr">(Cross-platfrom Apache MySQl PHP Perl)</span></li>
 								<li>Cygwin</li>
 								<li>Version control</li>
 							</ul>
@@ -276,15 +276,15 @@
 										<li>vi/Vim/Emacs</li>
 									</ul>
 								</li>
-								<li>IDE (Integrated Development Environment)
+								<li>IDE <span class="abbr">(Integrated Development Environment)</span>
 									<ul>
 										<li>Eclipse</li>
 										<li>Visual Studio</li>
 										<li>NetBeans</li>
 									</ul>
 								</li>
-								<li>SDK (Software Development Kit)</li>
-								<li>MVC (Model-View-Controller)</li>
+								<li>SDK <span class="abbr">(Software Development Kit)</span></li>
+								<li>MVC <span class="abbr">(Model-View-Controller)</span></li>
 							</ul>
 						</li>
 					</ul>
@@ -302,7 +302,7 @@
 		<div class="row-fluid">
 			<div class="span3">
 				<div class="fragment">
-					<h3>Rob and Kyle</h3>
+					<h3 class="orange">Rob and Kyle</h3>
 					<ul>
 						<li>Eclipse</li>
 						<li>Notepad++</li>
@@ -315,7 +315,7 @@
 			</div>
 			<div class="span3">
 				<div class="fragment">
-					<h3>Server</h3>
+					<h3 class="orange">Server</h3>
 					<ul>
 						<li>IIS</li>
 						<li>Apache</li>
@@ -327,7 +327,7 @@
 			</div>
 			<div class="span3">
 				<div class="fragment">
-					<h3>Web 2.0</h3>
+					<h3 class="orange">Web 2.0</h3>
 					<ul>
 						<li>AJAX</li>
 						<li>jQuery</li>
@@ -343,7 +343,7 @@
 			</div>
 			<div class="span3">
 				<div class="fragment">
-					<h3>Client</h3>
+					<h3 class="orange">Client</h3>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
