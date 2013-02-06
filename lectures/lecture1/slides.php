@@ -39,7 +39,7 @@
 						<li class="fragment roll-in">Runs in the user&rsquo;s browser</li>
 					</ul>
 				</div>
-				<div class="span6">img {person on the computer}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/laptop_head_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -61,7 +61,7 @@
 						<li>The client</li>
 					</ul>
 				</div>
-				<div class="span6">img {person on the computer}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/laptop_head_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -81,7 +81,11 @@
 						<li class="fragment roll-in">Runs on a server, somewhere</li>
 					</ul>
 				</div>
-				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
+				<div class="span6">
+					<img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/>
+					<div class="copyright">&copy 1999-2003 by Jamie Zawinski</div>
+					<?php /*Copyright © 1999-2003 by Jamie Zawinski. Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation. No representations are made about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty." (source: the program's man page) */ ?>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -102,7 +106,7 @@
 						<li>Python</li>
 					</ul>
 				</div>
-				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -132,7 +136,7 @@
 						<li>INI</li>
 					</ul>
 				</div>
-				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -153,7 +157,7 @@
 						<li>LAMP <span class="abbr">(Linux Apache MySQL PHP)</span></li>
 					</ul>
 				</div>
-				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -182,7 +186,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="span6">img {picture of horse with arrow pointing to rear}</div>
+				<div class="span6"><img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/></div>
 			</div>
 		</div>
 	</section>
@@ -359,9 +363,9 @@
 <section>
 	<?php echo outputHeader(); ?>
 	<div class="body">
-		<h3 class="fragment highlight-blue">{key ideas}</h3>
-		<h3 class="fragment highlight-blue">{key questions}</h3>
-		<h3 class="fragment fade-in">{your questions}</h3>
+		<h2 class="fragment highlight-blue">{key ideas}</h3>
+		<h2 class="fragment highlight-blue">{key questions}</h3>
+		<h2 class="fragment fade-in">{your questions}</h3>
 	</div>
 </section>
 
@@ -370,7 +374,7 @@
 	<div class="body">
 		<h2>Additional Information</h2>
 		<div class="row-fluid">
-			<div class="span6">
+			<div class="span6 align-left">
 				<h3>See Also</h3>
 				<ul>
 					<li>This presentation can be viewed at:
@@ -381,22 +385,22 @@
 						<span class="resource">\\SIRENFS1\Homes\kknox\git\teaching\.git</span>
 					</li>
 					<li>Articles explaining a number of these terms (and more) in detail
-						<a href="#" class="resource">http://www.skillcrush.codim/terms/</a>
+						<a href="http://www.skillcrush.com/terms/" target="_blank" class="resource">http://www.skillcrush.com/terms/</a>
 					</li>
 					<li>72 Essential Acronyms Related to Web Site Development
-						<a href="#" class="resource">http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development</a>
+						<a href="http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development" target="_blank" class="resource">http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development</a>
 					</li>
 				</ul>
 			</div>
-			<div class="span6">
+			<div class="span6 align-left">
 				<h3>Special Thanks</h3>
 				<p>Presentation platform built with help from:</p>
 				<ul>
 					<li>the jQuery community
-						<a href="#" class="resource">http://jquery.com/</a>
+						<a href="http://jquery.com" target="_blank" class="resource">http://jquery.com/</a>
 					</li>
 					<li>Hakim El Hattab&apos;s Reveal.js library
-						<a href="#" class="resource">https://github.com/hakimel/reveal.js</a>
+						<a href="https://github.com/hakimel/reveal.js" target="_blank" class="resource">https://github.com/hakimel/reveal.js</a>
 					</li>
 					<li>and Google, for making stuff easier to find online</li>
 				</ul>

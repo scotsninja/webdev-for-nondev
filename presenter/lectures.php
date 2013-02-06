@@ -28,7 +28,9 @@ $settings['stylesheets'][] = array('file' => 'reveal.min.css', 'media' => 'all')
 $settings['stylesheets'][] = array('file' => 'theme/'.$theme.'.css', 'media' => 'all');
 $settings['scripts'][] = 'reveal.js';
 $settings['js'] .= '
-Reveal.initialize({});';
+Reveal.initialize({
+	rollingLinks:false
+});';
 
 define('PRESENTATION_TITLE', $thisLecture['title']);
 define('PRESENTATION_SUBTITLE', $thisLecture['subtitle']);
