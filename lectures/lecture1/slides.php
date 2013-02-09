@@ -13,7 +13,7 @@
 		<h2><q>Let&rsquo;s Just Get This Over With</q></h2>
 		<div class="row-fluid">
 			<div class="span12">
-				img {animation of acronyms fading in randomly}
+				<div class="tag-cloud"></div>
 			</div>
 		</div>
 </section>

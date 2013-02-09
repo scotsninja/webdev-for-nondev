@@ -27,6 +27,7 @@ $settings['body_classes'] = array('home','presentation');
 $settings['stylesheets'][] = array('file' => 'reveal.min.css', 'media' => 'all');
 $settings['stylesheets'][] = array('file' => 'theme/'.$theme.'.css', 'media' => 'all');
 $settings['scripts'][] = 'reveal.js';
+$settings['scripts'][] = 'jquery.cloud.js';
 $settings['js'] .= '
 Reveal.initialize({
 	rollingLinks:false
