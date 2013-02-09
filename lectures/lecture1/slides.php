@@ -223,6 +223,7 @@
 						<li>CMS <span class="abbr">(Content Management System)</span></li>
 						<li>WYSIWYG <span class="abbr">(What You See Is What You Get)</span></li>
 						<li>API <span class="abbr">(Application Programming Interface)</span></li>
+						<li>SOA <span class="abbr">(Service-Oriented Architecture)</span></li>
 						<li>SaaS <span class="abbr">(Software as a Service)</span></li>
 						<li>REST <span class="abbr">(Representational State Transfer)</span></li>
 						<li>SOAP <span class="abbr">(Simple Object Access Protocol)</span></li>
@@ -363,9 +364,9 @@
 <section>
 	<?php echo outputHeader(); ?>
 	<div class="body">
-		<h2 class="fragment highlight-blue">{key ideas}</h3>
-		<h2 class="fragment highlight-blue">{key questions}</h3>
-		<h2 class="fragment fade-in">{your questions}</h3>
+		<h2 class="fragment fade-in">Key Ideas</h3>
+		<h2 class="fragment fade-in">Key Questions</h3>
+		<h2 class="fragment fade-in">Your Questions</h3>
 	</div>
 </section>
 
