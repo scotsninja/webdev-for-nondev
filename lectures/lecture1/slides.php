@@ -13,7 +13,12 @@
 		<h2><q>Let&rsquo;s Just Get This Over With</q></h2>
 		<div class="row-fluid">
 			<div class="span12">
-				<div class="tag-cloud"></div>
+				<div class="tag-cloud">
+					<div class="layer"></div>
+					<div class="layer"></div>
+					<div class="layer"></div>
+					<div class="layer"></div>
+				</div>
 			</div>
 		</div>
 </section>

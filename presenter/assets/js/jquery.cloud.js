@@ -31,7 +31,7 @@ function tagCloud(element, options) {
 	var _element = element[0],
 		settings = options,
 		items = [], ni = 0,
-		itemClasses = ['grow-small','grow-medium','grow-large','grow-xlarge'],
+		itemClasses = ['small','medium','large','xlarge'],
 		boxHeight = 0, boxWidth = 0,
 		timer;
 
@@ -65,7 +65,7 @@ function tagCloud(element, options) {
 			left:pos.left,
 			transform:'rotate('+rotation+'deg) skewX('+skew.x+') skewY('+skew.y+')'
 		}).fadeIn(500,function(){
-			$(this).addClass(size);
+			$(this).addClass('grow '+size);
 		});
 		
 		ni++;
@@ -85,9 +85,8 @@ function tagCloud(element, options) {
 		}
 	}
 	
-	// @todo
 	function load(){
-		items = ['cat','dog','unicorn','stone','house','dragons'];
+		items = CI;
 	}
 };
 })(jQuery);
