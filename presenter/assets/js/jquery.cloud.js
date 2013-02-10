@@ -38,7 +38,7 @@ function tagCloud(element, options) {
 	function render(){
 		load();
 		
-		$(_element).height($(window).innerHeight()-200);
+		$(_element).height($(window).innerHeight()-250);
 		boxHeight = $(_element).height();
 		boxWidth = $(_element).width();
 		
