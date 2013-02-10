@@ -14,6 +14,7 @@
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="tag-cloud">
+					<div class="moon"></div>
 					<div class="layer"></div>
 					<div class="layer"></div>
 					<div class="layer"></div>

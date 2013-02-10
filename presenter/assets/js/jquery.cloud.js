@@ -1,12 +1,16 @@
+var tc;
+
 $(document).ready(function(){
-/*
-	Reveal.addEventListener( 'slidechanged', function( event ) {
-		// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-		//alert(1);
+	Reveal.addEventListener( 'slidechanged', function(event){
+		if(event.indexh == 1){
+			tc = $('.tag-cloud').tagCloud();
+		} else if(tc) {
+			tc.destroy();
+			tc = null;
+		}
 	});
-	*/
 	
-	$('.tag-cloud').tagCloud();
+	tc = $('.tag-cloud').tagCloud();
 });
 
 (function($) {
@@ -23,6 +27,10 @@ $.fn.tagCloud = function(options) {
 	};
 
 	var settings = $.extend(defaults, options);
+	
+	this.destroy = function(){
+		_destroy();
+	}
 
 	return this.each(function() {
 		var f = new tagCloud($(this), settings);
@@ -50,6 +58,10 @@ function tagCloud(element, options) {
 		
 		// set interval to animate items
 		timer = setInterval(function(){nextItem()}, settings.timerInterval);
+	}
+	
+	function _destroy(){
+		alert('destroy');
 	}
 	
 	function nextItem(){
@@ -95,7 +107,7 @@ function tagCloud(element, options) {
 	
 	function load(){
 		// shuffle loaded items
-		items = _.shuffle(CI);
+		//items = _.shuffle(CI);
 	}
 };
 })(jQuery);
