@@ -59,9 +59,9 @@ function tagCloud(element, options) {
 		}
 		
 		var word = items[ni],
+			size = itemClasses[_.random(0,itemClasses.length)],
 			pos = calculatePosition(),
 			skew = calculateSkew(),
-			size = itemClasses[_.random(0,itemClasses.length)],
 			rMin = (pos.top<=30) ? 0 : settings.rotateMin,
 			rMax = (pos.top>=(boxHeight-30)) ? 0 : settings.rotateMax,
 			rotation = _.random(rMin, rMax);
