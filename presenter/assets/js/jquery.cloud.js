@@ -13,6 +13,12 @@ $(document).ready(function(){
 $.fn.tagCloud = function(options) {
 
 	var defaults = {
+		skewXMin: -30,
+		skewXMax: 30,
+		skewYMin: -30,
+		skewYMax: 30,
+		rotateMin: -70,
+		rotateMax: 70,
 		timerInterval: 1500
 	};
 
@@ -55,15 +61,17 @@ function tagCloud(element, options) {
 		var word = items[ni],
 			pos = calculatePosition(),
 			skew = calculateSkew(),
-			rotation = _.random(-90,90),
-			size = itemClasses[_.random(0,itemClasses.length)];
+			size = itemClasses[_.random(0,itemClasses.length)],
+			rMin = (pos.top<=30) ? 0 : settings.rotateMin,
+			rMax = (pos.top>=(boxHeight-30)) ? 0 : settings.rotateMax,
+			rotation = _.random(rMin, rMax);
 		
 		$(_element).append('<span id="word'+ni+'">'+word+'</span>');
 		
 		$('#word'+ni).css({
-			top:pos.top,
-			left:pos.left,
-			transform:'rotate('+rotation+'deg) skewX('+skew.x+') skewY('+skew.y+')'
+			top:pos.top+'px',
+			left:pos.left+'px',
+			transform:'rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg)'
 		}).fadeIn(500,function(){
 			$(this).addClass('grow '+size);
 		});
@@ -71,17 +79,17 @@ function tagCloud(element, options) {
 		ni++;
 		
 		function calculatePosition(){
-			var l = _.random(0, boxWidth),
-				t = _.random(0, boxHeight);
+			var l = _.random(0, (boxWidth-50)),
+				t = _.random(0, (boxHeight-20));
 
-			return {top:t+'px',left:l+'px'}
+			return {top:t,left:l}
 		}
 		
 		function calculateSkew(){
-			var x = _.random(-30, 30),
-				y = _.random(-30, 30);
+			var x = _.random(settings.skewXMin, settings.skewXMax),
+				y = _.random(settings.skewYMin, settings.skewYMax);
 
-			return {x:x+'deg',y:y+'deg'}
+			return {x:x,y:y}
 		}
 	}
 	
