@@ -1,6 +1,12 @@
 var tc;
 
 $(document).ready(function(){
+	// if loading second page directly, start the tag cloud
+	if(window.location.hash == '#/1'){
+		tc = $('.tag-cloud').tagCloud();
+	}
+	
+	// event handlers to ensure tag cloud only runs when it is the active slide
 	Reveal.addEventListener( 'slidechanged', function(event){
 		if(event.indexh == 1){
 			tc = $('.tag-cloud').tagCloud();
@@ -9,13 +15,12 @@ $(document).ready(function(){
 			tc = null;
 		}
 	});
-	
-	tc = $('.tag-cloud').tagCloud();
 });
 
 (function($) {
 $.fn.tagCloud = function(options) {
 
+	var el;
 	var defaults = {
 		skewXMin: -30,
 		skewXMax: 30,
@@ -29,18 +34,19 @@ $.fn.tagCloud = function(options) {
 	var settings = $.extend(defaults, options);
 	
 	this.destroy = function(){
-		_destroy();
+		el.destroy();
 	}
 
 	return this.each(function() {
-		var f = new tagCloud($(this), settings);
+		el = new tagCloud($(this), settings);
 
-		f.render();
+		el.render();
 	});
 };
 
 function tagCloud(element, options) {
 	this.render = render;
+	this.destroy = destroy;
 	
 	var _element = element[0],
 		settings = options,
@@ -60,8 +66,9 @@ function tagCloud(element, options) {
 		timer = setInterval(function(){nextItem()}, settings.timerInterval);
 	}
 	
-	function _destroy(){
-		alert('destroy');
+	function destroy(){
+		clearInterval(timer);
+		$(_element).find('span').remove();
 	}
 	
 	function nextItem(){
@@ -107,7 +114,7 @@ function tagCloud(element, options) {
 	
 	function load(){
 		// shuffle loaded items
-		//items = _.shuffle(CI);
+		items = _.shuffle(CI);
 	}
 };
 })(jQuery);
