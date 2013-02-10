@@ -86,7 +86,8 @@ function tagCloud(element, options) {
 	}
 	
 	function load(){
-		items = CI;
+		// shuffle loaded items
+		items = _.shuffle(CI);
 	}
 };
 })(jQuery);
