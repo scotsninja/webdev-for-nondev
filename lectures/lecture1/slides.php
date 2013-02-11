@@ -82,8 +82,8 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li class="fragment roll-in">Stores the user&apos;s data</li>
-						<li class="fragment roll-in">Manipulates the user&apos;s data</li>
+						<li class="fragment roll-in">Stores the user&rsquo;s data</li>
+						<li class="fragment roll-in">Manipulates the user&rsquo;s data</li>
 						<li class="fragment roll-in">Builds and serves the webpage</li>
 						<li class="fragment roll-in">Runs on a server, somewhere</li>
 					</ul>
@@ -100,7 +100,7 @@
 	<section>
 		<?php echo outputHeader(PRESENTATION_TITLE, 'The back-end'); ?>
 		<div class="body">
-			<h3>Examples &ndash; Programming</h3>
+			<h3>Examples &ndash; Programming Languages</h3>
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
@@ -125,6 +125,9 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
+						<li>INI</li>
+						<li>XML <span class="abbr">(Extensible Markup Language)</span></li>
+						<li>SQL <span class="abbr">(Structured Query Language)</span></li>
 						<li>RDBMS <span class="abbr">(Relational Database Management System)</span>
 							<ul>
 								<li>MySQL</li>
@@ -132,15 +135,12 @@
 								<li>Oracle Database</li>
 							</ul>
 						</li>
-						<li>SQL <span class="abbr">(Structured Query Language)</span></li>
 						<li>NoSQL
 							<ul>
 								<li>CouchDB</li>
 								<li>MongoDB</li>
 							</ul>
 						</li>
-						<li>XML <span class="abbr">(Extensible Markup Language)</span></li>
-						<li>INI</li>
 					</ul>
 				</div>
 				<div class="span6"><img src="/assets/img/lectures/lecture1/matrix_code_350.jpg" alt=""/></div>
@@ -207,12 +207,12 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li class="fragment roll-in">It&apos;s not front-end vs back-end</li>
-						<li class="fragment roll-in">It&apos;s not client vs server</li>
-						<li class="fragment roll-in green">It&apos;s abstraction</li>
-						<li class="fragment roll-in green">It&apos;s communication</li>
-						<li class="fragment roll-in green">It&apos;s connection</li>
-						<li class="fragment roll-in green">It&apos;s the Internet</li>
+						<li class="fragment roll-in">It&rsquo;s not front-end vs back-end</li>
+						<li class="fragment roll-in">It&rsquo;s not client vs server</li>
+						<li class="fragment roll-in green">It&rsquo;s abstraction</li>
+						<li class="fragment roll-in green">It&rsquo;s communication</li>
+						<li class="fragment roll-in green">It&rsquo;s connection</li>
+						<li class="fragment roll-in green">It&rsquo;s the Internet</li>
 					</ul>
 				</div>
 				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
@@ -227,8 +227,6 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>CMS <span class="abbr">(Content Management System)</span></li>
-						<li>WYSIWYG <span class="abbr">(What You See Is What You Get)</span></li>
 						<li>API <span class="abbr">(Application Programming Interface)</span></li>
 						<li>SOA <span class="abbr">(Service-Oriented Architecture)</span></li>
 						<li>SaaS <span class="abbr">(Software as a Service)</span></li>
@@ -237,9 +235,11 @@
 						<li>AJAX <span class="abbr">(Asynchronous JavaScript and XML)</span></li>
 						<li>JSON <span class="abbr">(JavaScript Object Notation)</span></li>
 						<li>XML</li>
-						<li>WebSocket</li>
-						<li>RSS/Atom</li>
 						<li>XSS <span class="abbr">(Cross-site Scripting)</span></li>
+						<li>WebSocket</li>
+						<li>CMS <span class="abbr">(Content Management System)</span></li>
+						<li>WYSIWYG <span class="abbr">(What You See Is What You Get)</span></li>
+						<li>RSS/Atom</li>
 					</ul>
 				</div>
 				<div class="span6"><img src="/assets/img/lectures/lecture1/Internet_map_700.jpg" alt="Map of the Internet"/></div>
@@ -252,13 +252,13 @@
 	<section>
 		<?php echo outputHeader(PRESENTATION_TITLE, 'Making sense of it all'); ?>
 		<div class="body">
-			<h1>Development</h1>
+			<h1>Developers</h1>
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li class="fragment roll-in">Makes everything possible</li>
 						<li class="fragment roll-in">The source code and project requirements</li>
-						<li class="fragment roll-in">Runs on the developer&apos;s computer</li>
+						<li class="fragment roll-in">Makes everything else possible</li>
+						<li class="fragment roll-in">Runs on the developer&rsquo;s computer</li>
 					</ul>
 				</div>
 				<iframe width="480" height="360" src="http://www.youtube-nocookie.com/embed/8To-6VIJZRE" frameborder="0" allowfullscreen seamless></iframe>
@@ -267,36 +267,71 @@
 	</section>
 	
 	<section>
-		<?php echo outputHeader(PRESENTATION_TITLE, 'Development'); ?>
+		<?php echo outputHeader(PRESENTATION_TITLE, 'Developers'); ?>
 		<div class="body">
-			<h3>Examples</h3>
+			<h3>Examples &ndash; Environment</h3>
 			<div class="row-fluid">
 				<div class="span6">
 					<ul>
-						<li>Environment
+						<li>Text editors
 							<ul>
-								<li>XAMPP <span class="abbr">(Cross-platfrom Apache MySQl PHP Perl)</span></li>
-								<li>Cygwin</li>
-								<li>Version control</li>
+								<li>Notepad++</li>
+								<li>vi/Vim/Emacs/Pico</li>
 							</ul>
 						</li>
-						<li>Coding
+						<li>IDE <span class="abbr">(Integrated Development Environment)</span>
 							<ul>
-								<li>Text editors
-									<ul>
-										<li>Notepad++</li>
-										<li>vi/Vim/Emacs</li>
-									</ul>
-								</li>
-								<li>IDE <span class="abbr">(Integrated Development Environment)</span>
-									<ul>
-										<li>Eclipse</li>
-										<li>Visual Studio</li>
-										<li>NetBeans</li>
-									</ul>
-								</li>
-								<li>SDK <span class="abbr">(Software Development Kit)</span></li>
-								<li>MVC <span class="abbr">(Model-View-Controller)</span></li>
+								<li>Eclipse</li>
+								<li>Visual Studio</li>
+								<li>NetBeans</li>
+							</ul>
+						</li>
+						<li>Version control
+							<ul>
+								<li>Git</li>
+								<li>SVN <span class="abbr">(Subversion)</span></li>
+								<li>Mercurial</li>
+							</ul>
+						</li>
+						<li>Compiler</li>
+						<li>SDK <span class="abbr">(Software Development Kit)</span></li>
+						<li>XAMPP <span class="abbr">(Cross-platfrom Apache MySQL PHP Perl)</span></li>
+						<li>CLI <span class="abbr">(Command Line Interface)</span></li>
+						<li>Cygwin</li>
+					</ul>
+				</div>
+				<div class="span6"><iframe width="640" height="360" src="http://www.youtube-nocookie.com/embed/1lqxORnQARw" frameborder="0" allowfullscreen seamless></iframe></div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<?php echo outputHeader(PRESENTATION_TITLE, 'Developers'); ?>
+		<div class="body">
+			<h3>Examples &ndash; Approaches</h3>
+			<div class="row-fluid">
+				<div class="span6">
+					<ul>
+						<li>Paradigms
+							<ul>
+								<li>OOP <span class="abbr">(Object-oriented programming)</span></li>
+								<li>Procedural programming</span></li>
+								<li>Event-driven</span></li>
+							</ul>
+						</li>
+						<li>Methodologies
+							<ul>
+								<li>Agile</li>
+								<li>TDD <span class="abbr">(Test-Driven Development)</span></li>
+								<li>XP <span class="abbr">(Extreme Programming)</span></li>
+								<li>Waterfall method</li>
+							</ul>
+						</li>
+						<li>Methods
+							<ul>
+								<li>Incremental development</li>
+								<li>Pair programming</li>
+								<li>Unit tests</li>
 							</ul>
 						</li>
 					</ul>
@@ -388,29 +423,33 @@
 					<li>This presentation can be viewed at:
 						<span class="resource">{link}</span>
 					</li>
-					<li>Notes and source files also available at:
+					<li>Notes and source files available at:
 						<span class="resource">\\SIRENFS1\Homes\kknox\git\teaching</span>
-						<span class="resource">\\SIRENFS1\Homes\kknox\git\teaching\.git</span>
 					</li>
-					<li>Articles explaining a number of these terms (and more) in detail
+					<li>Articles explaining some of these terms in detail:
 						<a href="http://www.skillcrush.com/terms/" target="_blank" class="resource">http://www.skillcrush.com/terms/</a>
 					</li>
-					<li>72 Essential Acronyms Related to Web Site Development
+					<li><q>72 Essential Acronyms Related to Web Site Development</q>:
 						<a href="http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development" target="_blank" class="resource">http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development</a>
 					</li>
 				</ul>
 			</div>
 			<div class="span6 align-left">
-				<h3>Special Thanks</h3>
-				<p>Presentation platform built with help from:</p>
+				<h3>This Presentation Uses</h3>
 				<ul>
-					<li>the jQuery community
-						<a href="http://jquery.com" target="_blank" class="resource">http://jquery.com/</a>
+					<li>HTML5</li>
+					<li>CSS3 (+Bootstrap)
+						<a href="http://twitter.github.com/bootstrap/" target="_blank" class="resource">http://twitter.github.com/bootstrap/</a>
 					</li>
-					<li>Hakim El Hattab&apos;s Reveal.js library
+					<li>PHP</li>
+					<li>Apache</li>
+					<li>.htaccess</li>
+					<li>Git</li>
+					<li>JavaScript (+jQuery, Underscore.js and Reveal.js)
+						<a href="http://jquery.com" target="_blank" class="resource">http://jquery.com/</a>
+						<a href="http://underscorejs.org" target="_blank" class="resource">http://underscorejs.org</a>
 						<a href="https://github.com/hakimel/reveal.js" target="_blank" class="resource">https://github.com/hakimel/reveal.js</a>
 					</li>
-					<li>and Google, for making stuff easier to find online</li>
 				</ul>
 			</div>
 		</div>
