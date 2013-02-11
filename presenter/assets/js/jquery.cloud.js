@@ -94,11 +94,11 @@ function tagCloud(element, options) {
 			ht;
 		
 		ht = '<span class="word '+size+'" id="word'+ni+'" style="top:'+pos.top+'px;left:'+pos.left+'px;\
-			-ms-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
-			-webkit-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
-			-o-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
-			-moz-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
-			transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+			-webkit-transform: rotateZ('+rotation+'deg) skewY('+skew.y+'deg) skewX('+skew.x+'deg);\
+			-moz-transform: rotateZ('+rotation+'deg) skewY('+skew.y+'deg) skewX('+skew.x+'deg);\
+			-o-transform: rotateZ('+rotation+'deg) skewY('+skew.y+'deg) skewX('+skew.x+'deg);\
+			-ms-transform: rotateZ('+rotation+'deg) skewY('+skew.y+'deg) skewX('+skew.x+'deg);\
+			transform: rotateZ('+rotation+'deg) skewY('+skew.y+'deg) skewX('+skew.x+'deg);\
 		">'+word+'</span>';
 
 		$_element.append(ht);
