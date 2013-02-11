@@ -22,6 +22,7 @@ $.fn.tagCloud = function(options) {
 
 	var el;
 	var defaults = {
+		wind: true,
 		skewXMin: -30,
 		skewXMax: 30,
 		skewYMin: -30,
@@ -57,6 +58,10 @@ function tagCloud(element, options) {
 
 	function render(){
 		load();
+
+		if(settings.wind){
+			$(_element).addClass('blowing');
+		}
 		
 		$(_element).height($(window).innerHeight()-250);
 		boxHeight = $(_element).height();
@@ -69,6 +74,7 @@ function tagCloud(element, options) {
 	function destroy(){
 		clearInterval(timer);
 		$(_element).find('span').remove();
+		$(_element).removeClass('blowing')
 	}
 	
 	function nextItem(){
@@ -114,7 +120,8 @@ function tagCloud(element, options) {
 	
 	function load(){
 		// shuffle loaded items
-		items = _.shuffle(CI);
+		//items = _.shuffle(CI);
+		items = ['item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item'];
 	}
 };
 })(jQuery);
