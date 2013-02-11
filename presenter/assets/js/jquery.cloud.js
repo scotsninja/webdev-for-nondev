@@ -125,8 +125,7 @@ function tagCloud(element, options) {
 	
 	function load(){
 		// shuffle loaded items
-		//items = _.shuffle(CI);
-		items = ['item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item'];
+		items = _.shuffle(CI);
 	}
 	
 	function getRand(min, max) {
