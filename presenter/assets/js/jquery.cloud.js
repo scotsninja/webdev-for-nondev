@@ -50,6 +50,7 @@ function tagCloud(element, options) {
 	this.destroy = destroy;
 	
 	var _element = element[0],
+		$_element = $(_element),
 		settings = options,
 		items = [], ni = 0,
 		itemClasses = ['small','medium','large','xlarge'],
@@ -60,12 +61,12 @@ function tagCloud(element, options) {
 		load();
 
 		if(settings.wind){
-			$(_element).addClass('blowing');
+			$_element.addClass('blowing');
 		}
 		
-		$(_element).height($(window).innerHeight()-250);
-		boxHeight = $(_element).height();
-		boxWidth = $(_element).width();
+		$_element.height($(window).innerHeight()-250);
+		boxHeight = $_element.height();
+		boxWidth = $_element.width();
 		
 		// set interval to animate items
 		timer = setInterval(function(){nextItem()}, settings.timerInterval);
@@ -73,8 +74,8 @@ function tagCloud(element, options) {
 	
 	function destroy(){
 		clearInterval(timer);
-		$(_element).find('span').remove();
-		$(_element).removeClass('blowing')
+		$_element.removeClass('blowing')
+		$_element.find('span').hide().remove();
 	}
 	
 	function nextItem(){
@@ -84,35 +85,39 @@ function tagCloud(element, options) {
 		}
 		
 		var word = items[ni],
-			size = itemClasses[_.random(0,itemClasses.length)],
+			size = itemClasses[Math.floor(Math.random()*itemClasses.length)],
 			pos = calculatePosition(),
 			skew = calculateSkew(),
 			rMin = (pos.top<=30) ? 0 : settings.rotateMin,
 			rMax = (pos.top>=(boxHeight-30)) ? 0 : settings.rotateMax,
-			rotation = _.random(rMin, rMax);
+			rotation = getRand(rMin, rMax),
+			ht;
 		
-		$(_element).append('<span id="word'+ni+'">'+word+'</span>');
-		
-		$('#word'+ni).css({
-			top:pos.top+'px',
-			left:pos.left+'px',
-			transform:'rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg)'
-		}).fadeIn(500,function(){
-			$(this).addClass('grow '+size);
+		ht = '<span class="word '+size+'" id="word'+ni+'" style="top:'+pos.top+'px;left:'+pos.left+'px;\
+			-ms-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+			-webkit-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+			-o-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+			-moz-transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+			transform:rotate('+rotation+'deg) skewX('+skew.x+'deg) skewY('+skew.y+'deg);\
+		">'+word+'</span>';
+
+		$_element.append(ht);
+		$_element.find('#word'+ni).fadeIn(500, function(){
+			$(this).addClass('grow');
 		});
-		
+
 		ni++;
 		
 		function calculatePosition(){
-			var l = _.random(0, (boxWidth-50)),
-				t = _.random(0, (boxHeight-20));
+			var l = getRand(0, (boxWidth-50)),
+				t = getRand(0, (boxHeight-20));
 
 			return {top:t,left:l}
 		}
 		
 		function calculateSkew(){
-			var x = _.random(settings.skewXMin, settings.skewXMax),
-				y = _.random(settings.skewYMin, settings.skewYMax);
+			var x = getRand(settings.skewXMin, settings.skewXMax),
+				y = getRand(settings.skewYMin, settings.skewYMax);
 
 			return {x:x,y:y}
 		}
@@ -122,6 +127,10 @@ function tagCloud(element, options) {
 		// shuffle loaded items
 		//items = _.shuffle(CI);
 		items = ['item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item','item'];
+	}
+	
+	function getRand(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 };
 })(jQuery);

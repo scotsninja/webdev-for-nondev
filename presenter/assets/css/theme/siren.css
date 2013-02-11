@@ -208,38 +208,38 @@ body {
 }
 
 .tag-cloud .layer{position:absolute;top:0;left:0;width:100%;height:100%;z-index:5;background-color:transparent;background-repeat:repeat-x;background-position:0 0;background-size:cover;}
-.tag-cloud .layer:first-child{background-image:url(/assets/img/lectures/lecture1/smoke1.png);}
-.tag-cloud .layer:nth-child(2){z-index:10;background-image:url(/assets/img/lectures/lecture1/smoke2.png);}
-.tag-cloud .layer:nth-child(3){z-index:50;background-image:url(/assets/img/lectures/lecture1/smoke3.png);}
-.tag-cloud .layer:nth-child(4){z-index:75;background-image:url(/assets/img/lectures/lecture1/smoke4.png);}
-.tag-cloud .layer:nth-child(5){z-index:101;background-image:url(/assets/img/lectures/lecture1/smoke5.png);}
+#cloud1{background-image:url(/assets/img/lectures/lecture1/smoke1.png);}
+#cloud2{z-index:10;background-image:url(/assets/img/lectures/lecture1/smoke2.png);}
+#cloud3{z-index:50;background-image:url(/assets/img/lectures/lecture1/smoke3.png);}
+#cloud4{z-index:75;background-image:url(/assets/img/lectures/lecture1/smoke4.png);}
+#cloud5{z-index:101;background-image:url(/assets/img/lectures/lecture1/smoke5.png);}
 
 /* if the wind is blowing */
-.tag-cloud.blowing .layer:nth-child(2){
+.tag-cloud.blowing #cloud2{
 -webkit-animation:float-ltr 120s infinite linear;
    -moz-animation:float-ltr 120s infinite linear;
      -o-animation:float-ltr 120s infinite linear;
 		animation:float-ltr 120s infinite linear;
 }
-.tag-cloud.blowing .layer:nth-child(3){
+.tag-cloud.blowing #cloud3{
 -webkit-animation:float-ltr 70s infinite linear;
    -moz-animation:float-ltr 70s infinite linear;
      -o-animation:float-ltr 70s infinite linear;
 		animation:float-ltr 70s infinite linear;
 }
-.tag-cloud.blowing .layer:nth-child(4){
+.tag-cloud.blowing #cloud4{
 -webkit-animation:float-ltr 35s infinite linear;
    -moz-animation:float-ltr 35s infinite linear;
      -o-animation:float-ltr 35s infinite linear;
 		animation:float-ltr 35s infinite linear;
 }
-.tag-cloud.blowing .layer:nth-child(5){
+.tag-cloud.blowing #cloud5{
 -webkit-animation:float-ltr 25s infinite linear;
    -moz-animation:float-ltr 25s infinite linear;
      -o-animation:float-ltr 25s infinite linear;
 		animation:float-ltr 25s infinite linear;
 }
-.tag-cloud span{position:absolute;display:block;top:0;left:0;display:none;font-size:0.01em;text-shadow:4px 4px 4px #333;z-index:1;white-space:nowrap;
+.tag-cloud span{position:absolute;display:none;top:0;left:0;font-size:0.01em;text-shadow:4px 4px 4px #333;z-index:1;white-space:nowrap;
 -webkit-transition: all 2500ms cubic-bezier(0.790, 0.030, 0.265, 1); /* older webkit */
 -webkit-transition: all 2500ms cubic-bezier(0.790, 0.030, 0.265, 1.550);
    -moz-transition: all 2500ms cubic-bezier(0.790, 0.030, 0.265, 1.550);
@@ -248,10 +248,10 @@ body {
         transition: all 2500ms cubic-bezier(0.790, 0.030, 0.265, 1.550);
 }
 .tag-cloud span.grow{z-index:100;}
-.tag-cloud span.grow.xlarge{font-size:2em;}
-.tag-cloud span.grow.large{font-size:1.5em;}
-.tag-cloud span.grow.medium{font-size:1em;}
 .tag-cloud span.grow.small{font-size:0.75em;}
+.tag-cloud span.grow.medium{font-size:1em;}
+.tag-cloud span.grow.large{font-size:1.5em;}
+.tag-cloud span.grow.xlarge{font-size:2em;}
 
 
 @-o-keyframes float-ltr {

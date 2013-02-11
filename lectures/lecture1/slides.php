@@ -15,11 +15,11 @@
 			<div class="span12">
 				<div class="tag-cloud">
 					<div class="moon"></div>
-					<div class="layer"></div>
-					<div class="layer"></div>
-					<div class="layer"></div>
-					<div class="layer"></div>
-					<div class="layer"></div>
+					<div class="layer" id="cloud1"></div>
+					<div class="layer" id="cloud2"></div>
+					<div class="layer" id="cloud3"></div>
+					<div class="layer" id="cloud4"></div>
+					<div class="layer" id="cloud5"></div>
 				</div>
 			</div>
 		</div>
