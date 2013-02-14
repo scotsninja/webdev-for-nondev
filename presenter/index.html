@@ -20,11 +20,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 			foreach($lectures as $l) {
 				if ($l['active']){
 					$dt = (is_string($l['date_updated']) && $l['date_updated'] != '') ? $l['date_updated'] : $l['date_created'];
-					try {
-						$dtObj = new DateTime($dt);
-					} catch (Exception $e){
-						$dtObj = new DateTime();
-					} ?>
+					?>
 					<div class="lecture">
 						<h3><?php echo $l['title']; ?></h3>
 						<?php if ($l['subtitle'] != '') { ?>
@@ -34,7 +30,7 @@ include($_SERVER['DOCUMENT_ROOT']."/includes/si_header.php"); ?>
 							<p><?php echo $l['description']; ?></p>
 						<?php } ?>
 						<div class="line author">By: <?php echo $l['author']; ?></div>
-						<div class="line date">Last updated: <?php echo sprintf('%s (%s)', $dtObj->format('F dS, Y'), $l['version']); ?></div>
+						<div class="line date">Last updated: <?php echo sprintf('%s (%s)', date('F dS, Y', strtotime($dt)), $l['version']); ?></div>
 						<a class="btn btn-large btn-block btn-warning" href="/lectures/<?php echo $l['url']; ?>">View Presentation</a>
 					</div>
 				<?php } ?>
