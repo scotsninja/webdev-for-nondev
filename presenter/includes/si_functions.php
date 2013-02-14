@@ -61,7 +61,8 @@ function sortLectures($a, $b) {
 	return 0;
 }
 
-function searchLecturesByUrl($term, array &$lectures = null) {
+//function searchLecturesByUrl($term, array &$lectures = null) {
+function searchLecturesByUrl($term, $lectures = null) {
 	if ($term == '' || !is_array($lectures)) {
 		return false;
 	}
