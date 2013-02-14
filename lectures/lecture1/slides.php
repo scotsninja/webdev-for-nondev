@@ -3,7 +3,10 @@
 	<div class="body">
 		<h1><?php echo PRESENTATION_TITLE; ?></h1>
 		<h2 class="subtitle"><?php echo PRESENTATION_SUBTITLE; ?></h2>
-		<div class="byline">Presented by <?php echo PRESENTATION_AUTHOR; ?></div>
+		<div class="byline">
+			Presented by <?php echo PRESENTATION_AUTHOR; ?><br/>
+			Updated: <?php printf('%s (v%s)', date('Y-m-d', strtotime(PRESENTATION_DATE_UPDATED)), PRESENTATION_VERSION); ?><br/>
+		</div>
 	</div>
 </section>
 
@@ -421,7 +424,7 @@
 				<h3>See Also</h3>
 				<ul>
 					<li>This presentation can be viewed at:
-						<span class="resource">{link}</span>
+						<span class="resource">//presenter.baxdev.corp.sireninteractive.com</span>
 					</li>
 					<li>Notes and source files available at:
 						<span class="resource">\\SIRENFS1\Homes\kknox\git\teaching</span>
