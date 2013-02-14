@@ -38,7 +38,21 @@ $CORE_PARAMS['db_password'] = '';
 $CORE_PARAMS['db_host'] = '';
 
 if (is_array($settings)) {
+	if(is_array($settings['stylesheets'])){
+		foreach($settings['stylesheets'] as $s){
+			$CORE_PARAMS['stylesheets'][] = $s;
+		}
+	}
+	if(is_array($settings['scripts'])){
+		foreach($settings['scripts'] as $s){
+			$CORE_PARAMS['scripts'][] = $s;
+		}
+	}
 	$settings = array_merge($CORE_PARAMS, $settings);
+	$settings['stylesheets'] = $CORE_PARAMS['stylesheets'];
+	$settings['scripts'] = $CORE_PARAMS['scripts'];
 } else {
 	$settings = $CORE_PARAMS;
 }
+
+define('TEMPLATE_DIR', './templates/');
