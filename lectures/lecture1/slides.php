@@ -432,13 +432,13 @@
 					<li>Articles explaining some of these terms in detail:
 						<a href="http://www.skillcrush.com/terms/" target="_blank" class="resource">http://www.skillcrush.com/terms/</a>
 					</li>
-					<li><q>72 Essential Acronyms Related to Web Site Development</q>:
+					<li>72 Essential Acronyms Related to Web Site Development:
 						<a href="http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development" target="_blank" class="resource">http://www.solosignal.com/72-essential-acronyms-related-to-web-site-development</a>
 					</li>
 				</ul>
 			</div>
 			<div class="span6 align-left">
-				<h3>This Presentation Uses</h3>
+				<h3>This Presentation Utilizes</h3>
 				<ul>
 					<li>HTML5</li>
 					<li>CSS3 (+Bootstrap)
