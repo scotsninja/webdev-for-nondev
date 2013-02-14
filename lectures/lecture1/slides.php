@@ -463,7 +463,7 @@
 
 <?php function outputHeader($title = PRESENTATION_TITLE, $subtitle = null){
 	$ret = '<div class="header">
-		<img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/>
+		<a href="/"><img width="175" height="55" title="Siren Interactive" src="/assets/img/templates/siren-logo.png" class="pull-right"/></a>
 		<h1>'.$title.'</h1>';
 		
 	if ($subtitle != '') {
