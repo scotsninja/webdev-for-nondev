@@ -7,6 +7,7 @@
 			Presented by <?php echo PRESENTATION_AUTHOR; ?><br/>
 			Updated: <?php printf('%s (v%s)', date('Y-m-d', strtotime(PRESENTATION_DATE_UPDATED)), PRESENTATION_VERSION); ?><br/>
 		</div>
+		<p><a href="http://xkcd.com/722/" target="_blank"><img src="/assets/img/lectures/lecture1/xkcd_722_computer_problems.jpg" alt="" height="" width=""/></a></p>
 	</div>
 </section>
 
@@ -409,9 +410,13 @@
 <section>
 	<?php echo outputHeader(); ?>
 	<div class="body">
-		<h2 class="fragment fade-in">Key Ideas</h3>
-		<h2 class="fragment fade-in">Key Questions</h3>
-		<h2 class="fragment fade-in">Your Questions</h3>
+		<h2 class="">Key Insights &amp; Questions</h2>
+		<p class="fragment align-left">&mdash; The number of technologies in taking an idea, shaping it into a webpage, storing it on a computer, and delivering it to any other computer, anywhere in the world, at any given time, are legion</p>
+		<p class="fragment align-left">&mdash; Programming is less about the particular tools chosen for a project, than it is about design patterns, methodologies and technqiues</p>
+		<p class="fragment align-left">&mdash; Is it possible to do {insert idea}? <span class="abbr">Yes.</span></p>
+		<p class="fragment align-left">&mdash; What about {insert a different idea}? <span class="abbr">Yes.</span></p>
+
+		<h2 class="fragment fade-in">Your Questions</h2>
 	</div>
 </section>
 

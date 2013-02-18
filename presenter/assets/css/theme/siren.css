@@ -194,7 +194,7 @@ body {
 .reveal section .green{color:#7CA32A !important;}
 .reveal section .orange{color:#D98609 !important;}
 .reveal section span.abbr{color:#3ae;font-size:0.75em;vertical-align:bottom;}
-.reveal section div.align-left{text-align:left;}
+.reveal section .align-left{text-align:left;}
  
 .tag-cloud{width:100%;min-height:250px;max-height:900px;position:relative;overflow:hidden;box-shadow:4px 4px 40px 8px #666;background-color:#000;}
 
